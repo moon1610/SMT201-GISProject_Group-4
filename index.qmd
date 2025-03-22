@@ -1,5 +1,5 @@
 ---
-title: "SMT201-GISProject_Group 3"
+title: "SMT201-GISProject_Group 4"
 ---
 
-Welcome to SMT201 GIS for Urban Planning Project website. In this website, you will find Godzilla Kam
+Welcome to SMT201 GIS for Urban Planning Project website. In this website, you will find...
