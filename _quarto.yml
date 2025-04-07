@@ -8,9 +8,11 @@ website:
       - text: Overview
         href: Overview.qmd
       - text: Methodology
-        href: ""
+        href: Methodology.qmd
       - text: Results and Discussion
-        href: ""
+        href: Results.qmd
+      - text: Interactive map 
+        href: "qgis2web/index.html"
     right:
       - href: index.qmd
         text: Home
