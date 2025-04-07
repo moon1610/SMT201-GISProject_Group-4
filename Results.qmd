@@ -1,0 +1,16 @@
+---
+title: "Results"
+format: html
+---
+
+# Analysis Results 
+
+### Spatial distribution of EV Charging Points 
+
+#### Legend 
+
+![](images/EVCP_Legend.png)
+
+#### Choropleth Map 
+
+###  
