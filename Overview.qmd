@@ -1,6 +1,6 @@
 ---
 title: "Overview"
-author: "Poornima Valsan, Christle Tan, Elena Deon "
+author: "Poornima Valsan, Christle Tan, Elena Deon"
 date: "March 15, 2025"
 date-modified: "last-modified"
 ---
@@ -13,7 +13,7 @@ Singapore's energy grid, heavily reliant on natural gas, faces increasing pressu
 
 ### 1.2 Proposed Solution
 
-We propose a GIS-based multi-criteria analysis to assess land suitability for solar-powered EV charging stations. By analysing factors like solar potential, land availability, and EV demand, we aim to identify ideal locations for these stations. This solution aims to support Singapore's target of 60,000 charging points by 203 and leverages solar storage technologies (e.g. lithium-ion batteries) to ensure efficient operation, contributing to sustainable mobility and decarbonisation under the Green Plan 2030
+We propose a GIS-based multi-criteria analysis to assess land suitability for solar-powered EV charging stations. By analysing factors like solar potential, land availability, and EV demand, we aim to identify ideal locations for these stations. This solution aims to support Singapore's target of 60,000 charging points by 2030 and leverages solar storage technologies (e.g. lithium-ion batteries) to ensure efficient operation, contributing to sustainable mobility and decarbonisation under the Green Plan 2030.
 
 ## Project Schedule and Workload
 
