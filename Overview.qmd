@@ -7,10 +7,14 @@ date-modified: "last-modified"
 
 ## Introduction
 
-### The Study Area
+### 1.1 Problem Statement
 
-#### Sub-heading 1
+Singapore's energy grid, heavily reliant on natural gas, faces increasing pressure from rising electric vehicle (EV) adoption. With limited land, there is a need to identify optimal sites for solar-powered EV charging stations that integrate solar energy harvesting and storage to reduce dependence on the grid and support Green Plan 2030 goals.
 
-#### Sub-heading 2
+### 1.2 Proposed Solution
 
-### The Study Period
+We propose a GIS-based multi-criteria analysis to assess land suitability for solar-powered EV charging stations. By analysing factors like solar potential, land availability, and EV demand, we aim to identify ideal locations for these stations. This solution aims to support Singapore's target of 60,000 charging points by 203 and leverages solar storage technologies (e.g. lithium-ion batteries) to ensure efficient operation, contributing to sustainable mobility and decarbonisation under the Green Plan 2030
+
+## Project Schedule and Workload
+
+![](images/clipboard-1504980887.png)
