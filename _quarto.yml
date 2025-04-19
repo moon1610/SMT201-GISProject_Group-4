@@ -13,6 +13,8 @@ website:
         href: Results.qmd
       - text: Interactive map 
         href: "qgis2web/index.html"
+      - text: Poster
+        href: Poster.qmd
     right:
       - href: index.qmd
         text: Home
