@@ -22,7 +22,7 @@ website:
 format:
   html:
     theme:
-      - quartz
+      - lux
       - brand
     css: styles.css
     toc: true

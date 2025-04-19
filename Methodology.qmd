@@ -3,13 +3,13 @@ title: "Methodology"
 format: html
 ---
 
-# Data Preparation 
+# Data Preparation
 
-# Preparation Procedures 
+# Preparation Procedures
 
-## 1. Chloropleth Maps 
+## 1. Chloropleth Maps
 
-### 1.1 No. of EV Charging Points 
+### 1.1 No. of EV Charging Points
 
 1\. Load MP19SZ 
 
@@ -19,7 +19,7 @@ format: html
 
 4\. Right click on this layer → Select “Properties” → Click on “Symbology” → Choose Graduated style → Set Value as “No. of Charging Outlets Count” → Select Natural Breaks (Jenks) for classification → Click Classify → Apply
 
-### 1.2 Areas lacking EV Charging Points 
+### 1.2 Areas lacking EV Charging Points
 
 ### 1. Load MP19 
 
