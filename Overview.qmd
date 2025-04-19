@@ -7,6 +7,8 @@ date-modified: "last-modified"
 
 ## Introduction
 
+![](images/image_1.png)
+
 ### 1.1 Problem Statement
 
 Singapore's energy grid, heavily reliant on natural gas, faces increasing pressure from rising electric vehicle (EV) adoption. With limited land, there is a need to identify optimal sites for solar-powered EV charging stations that integrate solar energy harvesting and storage to reduce dependence on the grid and support Green Plan 2030 goals.
