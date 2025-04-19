@@ -2,5 +2,6 @@
 title: "Our Team"
 ---
 
-This is project team LOL\
 \
+\
+![](images/clipboard-1817683407.png)

@@ -9,7 +9,7 @@ website:
         href: Overview.qmd
       - text: Methodology
         href: Methodology.qmd
-      - text: Results and Discussion
+      - text: Results and Analysis
         href: Results.qmd
       - text: Interactive map 
         href: "qgis2web/index.html"
@@ -20,6 +20,15 @@ website:
         text: Home
       - text: Team
         href: about.qmd
+  sidebar: 
+    - title: "Methodology"
+      style: "docked"
+      background: light
+      contents:
+        - Methodology.qmd
+        - Data Source.qmd
+        - Data Preparation.qmd
+        
 
 format:
   html:
@@ -30,4 +39,5 @@ format:
     toc: true
 
 editor: visual
+
 

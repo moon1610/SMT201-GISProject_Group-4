@@ -7,27 +7,6 @@
     "text": "Analysis Results\n\nSpatial distribution of EV Charging Points\n\nLegend\n\n\n\nChoropleth Map"
   },
   {
-    "objectID": "Methodology.html#chloropleth-maps",
-    "href": "Methodology.html#chloropleth-maps",
-    "title": "Methodology",
-    "section": "1. Chloropleth Maps",
-    "text": "1. Chloropleth Maps\n\n1.1 No. of EV Charging Points\n1. Load MP19SZ \n2. Click on “Processing” → “Toolbox” → Select “Join Attributes by Location (Summary)” → Set  “Join to features in” as “MP19SZ” → Set “By comparing to” as “EV_Points” → Select “Intersect, Contain, Are Within” for the features → Select “Count” for summaries to calculate→ Run \n3. Right Click on this new joined layer → “Export” → “save Features As” → Save it as a GeoPackage named GP and save the layer as “EV_Points_Choropleth” \n4. Right click on this layer → Select “Properties” → Click on “Symbology” → Choose Graduated style → Set Value as “No. of Charging Outlets Count” → Select Natural Breaks (Jenks) for classification → Click Classify → Apply\n\n\n1.2 Areas lacking EV Charging Points\n\n\n1. Load MP19 \n2. Right click on MP19 → “Open Attribute Table” → “Select by Expression” → Write this in the expression:  “Description” LIKE ‘%COMMERCIAL%’ OR “Description” LIKE ‘%RESIDENTIAL%’ → “Select Features” \n3. Right click on MP19 → “Export” → “Save Selected Features As” → Save it as a Geopackage named GP and save layer as “Suitable_Land_Use” \n4. Right click on “Suitable_Land_Use” → “Open Attribute Table” → “Field Calculator” → Set the output field name as “Land_Type” and let the output field type be “Text (String)” → Set the expression as: regexp_replace(regexp_replace(“Description”, ‘.*&lt;th&gt;LU_DESC&lt;/th&gt; &lt;td&gt;’, ’‘),’&lt;/td&gt;.*‘,’’) → Apply \n5. Right click on “Suitable_Land_Use” → “Toggle Editing” → Save \n6. Right click on “Suitable_Land_Use” → “Properties” → “Symbology” → Change symbology to “Categorized” → Select “Land_Type” as value field → Click “Classify” → Click “Ok” \n7. Load the “EV_Points” layer and find suitable land types that are lacking EV charging points."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Our Team",
-    "section": "",
-    "text": "This is project team LOL"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "SMT201-GISProject",
-    "section": "",
-    "text": "Welcome to SMT201 GIS for Urban Planning Project website."
-  },
-  {
     "objectID": "Overview.html",
     "href": "Overview.html",
     "title": "Overview",
@@ -47,5 +26,44 @@
     "title": "Overview",
     "section": "Project Schedule and Workload",
     "text": "Project Schedule and Workload"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "SMT201-GISProject",
+    "section": "",
+    "text": "Welcome to SMT201 GIS for Urban Planning Project website."
+  },
+  {
+    "objectID": "Data Preparation.html",
+    "href": "Data Preparation.html",
+    "title": "Data Preparation",
+    "section": "",
+    "text": "Hi",
+    "crumbs": [
+      "Methodology",
+      "Data Preparation"
+    ]
+  },
+  {
+    "objectID": "Data Source.html",
+    "href": "Data Source.html",
+    "title": "Data Source",
+    "section": "",
+    "text": "File Name\nDescription\nSource\n\n\n\n\nMasterPlan2019",
+    "crumbs": [
+      "Methodology",
+      "Data Source"
+    ]
+  },
+  {
+    "objectID": "Methodology.html#chloropleth-maps",
+    "href": "Methodology.html#chloropleth-maps",
+    "title": "Methodology",
+    "section": "1. Chloropleth Maps",
+    "text": "1. Chloropleth Maps\n\n1.1 No. of EV Charging Points\n1. Load MP19SZ \n2. Click on “Processing” → “Toolbox” → Select “Join Attributes by Location (Summary)” → Set  “Join to features in” as “MP19SZ” → Set “By comparing to” as “EV_Points” → Select “Intersect, Contain, Are Within” for the features → Select “Count” for summaries to calculate→ Run \n3. Right Click on this new joined layer → “Export” → “save Features As” → Save it as a GeoPackage named GP and save the layer as “EV_Points_Choropleth” \n4. Right click on this layer → Select “Properties” → Click on “Symbology” → Choose Graduated style → Set Value as “No. of Charging Outlets Count” → Select Natural Breaks (Jenks) for classification → Click Classify → Apply\n\n\n1.2 Areas lacking EV Charging Points\n\n\n1. Load MP19 \n2. Right click on MP19 → “Open Attribute Table” → “Select by Expression” → Write this in the expression:  “Description” LIKE ‘%COMMERCIAL%’ OR “Description” LIKE ‘%RESIDENTIAL%’ → “Select Features” \n3. Right click on MP19 → “Export” → “Save Selected Features As” → Save it as a Geopackage named GP and save layer as “Suitable_Land_Use” \n4. Right click on “Suitable_Land_Use” → “Open Attribute Table” → “Field Calculator” → Set the output field name as “Land_Type” and let the output field type be “Text (String)” → Set the expression as: regexp_replace(regexp_replace(“Description”, ‘.*&lt;th&gt;LU_DESC&lt;/th&gt; &lt;td&gt;’, ’‘),’&lt;/td&gt;.*‘,’’) → Apply \n5. Right click on “Suitable_Land_Use” → “Toggle Editing” → Save \n6. Right click on “Suitable_Land_Use” → “Properties” → “Symbology” → Change symbology to “Categorized” → Select “Land_Type” as value field → Click “Classify” → Click “Ok” \n7. Load the “EV_Points” layer and find suitable land types that are lacking EV charging points.",
+    "crumbs": [
+      "Methodology"
+    ]
   }
 ]
