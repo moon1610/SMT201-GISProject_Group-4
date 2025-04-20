@@ -55,4 +55,18 @@ format: html
     print(result_df)
     ```
 
-The output would be a CSV file, which you can now run as a delimited text layer on QGIS for further analysis.
+The output would be a CSV file, which you can now run as a delimited text layer on QGIS for further analysis. Open QGIS to proceed.
+
+3.  Create a new project. Click on Layer \> Add Layer \> Add Delimited Text Layer.
+4.  Input the newly created ev_chargers_count.csv under file name, and name the layer as ev_chargers_count.
+5.  Under Geometry Definition, ensure that the X and Y coordinates are Longitude and Latitude respectively, and the geometry CRS is set to SVY21.
+
+### 2.2 Analyzing charger types
+
+Understanding the current distribution of charger types allows us to understand the prevalence of EVs, and the amount of energy required to power these EV stations. We will be using the DataPlotly plugin to derive this graph.
+
+1.  Open the DataPlotly plugin.
+2.  Set plot type to Histogram
+3.  Set X field to **Type of Connector**
+4.  Click on Create Plot. The following should be the resulting graph:\
+    ![](images/clipboard-340631990.png)
