@@ -27,8 +27,12 @@ website:
         - Research.qmd
         - Data Source.qmd
         - Data Preparation.qmd
-        
-
+    - title: "Results"
+      style: "docked"
+      background: light
+      contents:
+        - Results.qmd
+        - Future works.qmd
 format:
   html:
     theme:
@@ -36,6 +40,7 @@ format:
       - brand
     css: styles.css
     toc: true
+    page-layout: full
 
 editor: visual
 
