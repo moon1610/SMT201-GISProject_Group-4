@@ -84,7 +84,7 @@ Understanding the current distribution of charger types allows us to understand 
 
 4.   Once the slope raster is created, go to **Raster** → **Raster Calculator** to reclassify:
 
-    -    Use conditions to assign values to slope ranges:
+    -    Use conditions to assign values to slope ranges
 
 5.  Assign labels (Gentle, Moderate, etc.) to the values using **Layer Properties → Symbology** → Paletted/Unique values.
 

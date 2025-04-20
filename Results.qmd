@@ -130,3 +130,41 @@ Slope suitability analysis is essential when planning for **infrastructure that 
 -   Reinforces the importance of combining **topographic and infrastructural layers** in GIS-based decision-making
 
 -   Supports the prioritization of **flat terrain zones for solar-powered EV station deployment** under Singapore’s Green Plan goals
+
+### 4. Analysis of Identified EV Charging Stations for Solar Integration
+
+![](images/Potential EV charging stations for solar adoption.png)
+
+This map displays the **final shortlisted EV charging stations** across Singapore that are suitable for **solar panel integration**, based on two key suitability criteria:
+
+-    **Gentle slope** terrain (low construction risk and easier panel installation)
+
+-    **High solar irradiance** (Global Horizontal Irradiance ≥ 1650 kWh/m²/year)
+
+#### Key Findings
+
+-   The majority of the shortlisted stations are **clustered in the East region**, particularly around **Tampines, Bedok, and Changi**, where both **solar exposure is high** and the **terrain is flat**.
+
+<!-- -->
+
+-    Smaller but significant clusters are also found in **Tuas and Jurong**, which are industrial zones with high rooftop potential (e.g., MSCPs, logistics hubs).
+
+<!-- -->
+
+-    These locations are not only **topographically suitable** but also strategically positioned in **residential and industrial zones**, where EV demand is expected to grow.
+
+#### **Solar Integration Considerations**
+
+While some charging stations (e.g., **Shell Recharge** sites) already use solar panels, these are generally **grid-tied systems**, where solar energy helps offset grid electricity consumption, often tracked using **Renewable Energy Certificates (RECs)**.
+
+However, most urban EV stations in Singapore remain **entirely grid-dependent**, drawing energy from the national power grid.
+
+-    **Off-grid solar EV charging**, as explored in global case studies, typically requires **large-scale battery storage** to ensure stable charging even during low irradiance periods.
+
+-    These setups are more common in **remote or rural areas** with limited grid access, and less viable for dense urban settings like Singapore due to **space and cost constraints**.
+
+Given these findings:
+
+-    Singapore can **strategically implement solar-assisted (grid-tied) EV charging hubs** in identified areas to reduce peak grid loads and carbon intensity.
+
+-    These sites could serve as **pilot zones for hybrid models**, blending solar PV, smart grid tech, and possibly limited storage for load balancing.

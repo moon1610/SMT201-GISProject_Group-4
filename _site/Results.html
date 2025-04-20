@@ -101,10 +101,6 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Results and Analysis</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./qgis2web/index.html"> 
-<span class="menu-text">Interactive map</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./Poster.html"> 
 <span class="menu-text">Poster</span></a>
   </li>  
@@ -162,6 +158,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#spatial-distribution-of-ev-charging-points" id="toc-spatial-distribution-of-ev-charging-points" class="nav-link active" data-scroll-target="#spatial-distribution-of-ev-charging-points">1. Spatial distribution of EV Charging Points</a></li>
   <li><a href="#solar-irradiance-ghi" id="toc-solar-irradiance-ghi" class="nav-link" data-scroll-target="#solar-irradiance-ghi">2. Solar Irradiance (GHI)</a></li>
   <li><a href="#slope-analysis-and-classification" id="toc-slope-analysis-and-classification" class="nav-link" data-scroll-target="#slope-analysis-and-classification">3. Slope Analysis and Classification</a></li>
+  <li><a href="#analysis-of-identified-ev-charging-stations-for-solar-integration" id="toc-analysis-of-identified-ev-charging-stations-for-solar-integration" class="nav-link" data-scroll-target="#analysis-of-identified-ev-charging-stations-for-solar-integration">4. Analysis of Identified EV Charging Stations for Solar Integration</a></li>
   </ul>
 </nav>
     </div>
@@ -330,8 +327,45 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Reinforces the importance of combining <strong>topographic and infrastructural layers</strong> in GIS-based decision-making</p></li>
 <li><p>Supports the prioritization of <strong>flat terrain zones for solar-powered EV station deployment</strong> under Singapore’s Green Plan goals</p></li>
 </ul>
+</section>
+<section id="analysis-of-identified-ev-charging-stations-for-solar-integration" class="level3">
+<h3 class="anchored" data-anchor-id="analysis-of-identified-ev-charging-stations-for-solar-integration">4. Analysis of Identified EV Charging Stations for Solar Integration</h3>
+<p><img src="images/Potential EV charging stations for solar adoption.png" class="img-fluid"></p>
+<p>This map displays the <strong>final shortlisted EV charging stations</strong> across Singapore that are suitable for <strong>solar panel integration</strong>, based on two key suitability criteria:</p>
+<ul>
+<li><p><strong>Gentle slope</strong> terrain (low construction risk and easier panel installation)</p></li>
+<li><p><strong>High solar irradiance</strong> (Global Horizontal Irradiance ≥ 1650 kWh/m²/year)</p></li>
+</ul>
+<section id="key-findings" class="level4">
+<h4 class="anchored" data-anchor-id="key-findings">Key Findings</h4>
+<ul>
+<li>The majority of the shortlisted stations are <strong>clustered in the East region</strong>, particularly around <strong>Tampines, Bedok, and Changi</strong>, where both <strong>solar exposure is high</strong> and the <strong>terrain is flat</strong>.</li>
+</ul>
+<!-- -->
+<ul>
+<li>Smaller but significant clusters are also found in <strong>Tuas and Jurong</strong>, which are industrial zones with high rooftop potential (e.g., MSCPs, logistics hubs).</li>
+</ul>
+<!-- -->
+<ul>
+<li>These locations are not only <strong>topographically suitable</strong> but also strategically positioned in <strong>residential and industrial zones</strong>, where EV demand is expected to grow.</li>
+</ul>
+</section>
+<section id="solar-integration-considerations" class="level4">
+<h4 class="anchored" data-anchor-id="solar-integration-considerations"><strong>Solar Integration Considerations</strong></h4>
+<p>While some charging stations (e.g., <strong>Shell Recharge</strong> sites) already use solar panels, these are generally <strong>grid-tied systems</strong>, where solar energy helps offset grid electricity consumption, often tracked using <strong>Renewable Energy Certificates (RECs)</strong>.</p>
+<p>However, most urban EV stations in Singapore remain <strong>entirely grid-dependent</strong>, drawing energy from the national power grid.</p>
+<ul>
+<li><p><strong>Off-grid solar EV charging</strong>, as explored in global case studies, typically requires <strong>large-scale battery storage</strong> to ensure stable charging even during low irradiance periods.</p></li>
+<li><p>These setups are more common in <strong>remote or rural areas</strong> with limited grid access, and less viable for dense urban settings like Singapore due to <strong>space and cost constraints</strong>.</p></li>
+</ul>
+<p>Given these findings:</p>
+<ul>
+<li><p>Singapore can <strong>strategically implement solar-assisted (grid-tied) EV charging hubs</strong> in identified areas to reduce peak grid loads and carbon intensity.</p></li>
+<li><p>These sites could serve as <strong>pilot zones for hybrid models</strong>, blending solar PV, smart grid tech, and possibly limited storage for load balancing.</p></li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
