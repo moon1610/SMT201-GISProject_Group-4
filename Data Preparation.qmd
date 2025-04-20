@@ -17,7 +17,7 @@ format: html
 
 ### 1.2 Areas lacking EV Charging Points
 
-### 1. Load MP19 
+1\. Load MP19 
 
 2\. Right click on MP19 → “Open Attribute Table” → “Select by Expression” → Write this in the expression:  "Description" LIKE '%COMMERCIAL%' OR "Description" LIKE '%RESIDENTIAL%' → “Select Features” 
 
