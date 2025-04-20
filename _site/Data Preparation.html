@@ -132,7 +132,7 @@ ul.task-list li input[type="checkbox"] {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="sidebar-menu-container"> 
@@ -177,11 +177,16 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#areas-lacking-ev-charging-points" id="toc-areas-lacking-ev-charging-points" class="nav-link" data-scroll-target="#areas-lacking-ev-charging-points">1.2 Areas lacking EV Charging Points</a></li>
   <li><a href="#load-mp19" id="toc-load-mp19" class="nav-link" data-scroll-target="#load-mp19">1. Load MP19&nbsp;</a></li>
   </ul></li>
+  <li><a href="#data-graphs" id="toc-data-graphs" class="nav-link" data-scroll-target="#data-graphs">2. Data Graphs</a>
+  <ul class="collapse">
+  <li><a href="#data-preparation" id="toc-data-preparation" class="nav-link" data-scroll-target="#data-preparation">2.1 Data Preparation</a></li>
+  <li><a href="#analyzing-charger-types" id="toc-analyzing-charger-types" class="nav-link" data-scroll-target="#analyzing-charger-types">2.2 Analyzing charger types</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -190,7 +195,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-body">
 
     
   
@@ -222,6 +227,33 @@ ul.task-list li input[type="checkbox"] {
 <p>5. Right click on “Suitable_Land_Use” → “Toggle Editing” → Save&nbsp;</p>
 <p>6. Right click on “Suitable_Land_Use” → “Properties” → “Symbology” → Change symbology to “Categorized” → Select “Land_Type” as value field → Click “Classify” → Click “Ok”&nbsp;</p>
 <p>7. Load the “EV_Points” layer and find suitable land types that are lacking EV charging points.</p>
+</section>
+</section>
+<section id="data-graphs" class="level2">
+<h2 class="anchored" data-anchor-id="data-graphs">2. Data Graphs</h2>
+<section id="data-preparation" class="level3">
+<h3 class="anchored" data-anchor-id="data-preparation">2.1 Data Preparation</h3>
+<ol type="1">
+<li><p>Open the EV Charging Stations dataset downloaded from LTADataMall.</p></li>
+<li><p>Run the following code to condense the number of EV charging stations found in one location</p></li>
+</ol>
+<p>The output would be a CSV file, which you can now run as a delimited text layer on QGIS for further analysis. Open QGIS to proceed.</p>
+<ol start="3" type="1">
+<li>Create a new project. Click on Layer &gt; Add Layer &gt; Add Delimited Text Layer.</li>
+<li>Input the newly created ev_chargers_count.csv under file name, and name the layer as ev_chargers_count.</li>
+<li>Under Geometry Definition, ensure that the X and Y coordinates are Longitude and Latitude respectively, and the geometry CRS is set to SVY21.</li>
+</ol>
+</section>
+<section id="analyzing-charger-types" class="level3">
+<h3 class="anchored" data-anchor-id="analyzing-charger-types">2.2 Analyzing charger types</h3>
+<p>Understanding the current distribution of charger types allows us to understand the prevalence of EVs, and the amount of energy required to power these EV stations. We will be using the DataPlotly plugin to derive this graph.</p>
+<ol type="1">
+<li>Open the DataPlotly plugin.</li>
+<li>Set plot type to Histogram</li>
+<li>Set X field to <strong>Type of Connector</strong></li>
+<li>Click on Create Plot. The following should be the resulting graph:<br>
+<img src="images/clipboard-340631990.png" class="img-fluid"></li>
+</ol>
 
 
 </section>

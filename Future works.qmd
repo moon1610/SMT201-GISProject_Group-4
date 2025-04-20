@@ -1,0 +1,44 @@
+---
+title: "Future works"
+format: html
+---
+
+Looking ahead, this project lays the groundwork for a nationwide network of smart, solar-powered EV charging stations seamlessly integrated into Singapore’s urban fabric. Real-time traffic data, predictive EV adoption trends, and energy storage capabilities can be incorporated to optimize grid performance. We can further expand into evaluating the suitability of existing car parks across Singapore by installing solar panels on surface-level car parks or on the rooftops of multi-storey car parks. These panels can convert solar energy into electricity to charge EVs parked on upper levels, maximizing land use and energy efficiency. Beyond charging infrastructure, this vision extends to creating self-sustaining energy hubs that not only power vehicles, but also feed clean energy back into the city—driving Singapore toward a smarter, greener future.
+
+## More Recommendations: Solar Panel Installation in Car Parks
+
+To support sustainable urban mobility and optimize land use, we recommend installing solar panels on the rooftops of HDB car parks—particularly in areas identified with high solar irradiance (see previous section). This strategy enables dual-purpose use of urban infrastructure: **generating renewable energy while supporting electric vehicle (EV) charging needs**.
+
+### **Target Car Parks**
+
+::: {layout-ncol="2"}
+![](images/clipboard-2181096509.png){width="555"}
+
+![](images/clipboard-1598341178.png){width="234"}
+:::
+
+We have excluded basement and mechanised car parks from this analysis due to structural limitations. The filtered results highlight **multi-storey and open-air car parks** as ideal candidates for rooftop solar installation.
+
+### **Why Car Parks?**
+
+-   **Unshaded rooftop space** with direct sun exposure
+
+-   **Proximity to EV demand zones** (residential areas)
+
+-   **Flat surface area** ideal for panel mounting
+
+-   **Efficient grid integration** through existing electrical infrastructure
+
+Solar energy harvested here can directly power charging points located at higher levels of the car park, reducing dependency on the main grid and promoting decentralized energy generation.
+
+## Estimated Costs and Dimensions
+
+| Specification | Details |
+|----|----|
+| Typical Panel Size | 1.7m x 1.0m (approx. 1.7m² per panel) |
+| Power Output per Panel | \~500 Wp (Watt-peak) |
+| Average Cost per Panel | SGD \$300–\$400 (before subsidies) |
+| Installation & Inverter Cost | SGD \$1,500–\$2,500 per system setup (variable) |
+| Area Needed for 1kWp Output | \~5–6 m² |
+| Average Rooftop Size (MSCP) | \~1,000–1,500 m² (depending on location) |
+| Potential System Size | 150–250 kWp per car park |

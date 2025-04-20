@@ -2,9 +2,12 @@
   {
     "objectID": "Results.html",
     "href": "Results.html",
-    "title": "Results",
+    "title": "Results and Analysis",
     "section": "",
-    "text": "Analysis Results\n\nSpatial distribution of EV Charging Points\n\nLegend\n\n\n\nChoropleth Map"
+    "text": "1. Spatial distribution of EV Charging Points\n\n\n\n\n\n\n\n\n\n\n\n\n\nKey Insights from the Map:\n\nCBD Areas:\n\nUrban areas such as Marina Bay, Central Business District (CBD), and areas with high commercial activity (e.g., Orchard Road, Raffles Place) are likely to have a higher number of charging outlets due to higher demand from residents, businesses, and commuters.\n\nMilitary Zones\n\nThe lack of EV charging zones in the northwestern part of Singapore can be attributed to the land being primarily used for military purposes, such as Tengah Air Base, Sungei Gedong Camp, and Lim Chu Kang, which is a mix of military facilities and cemetery land. This significantly limits the availability of space for EV charging infrastructure in these areas.\n\nBTO Development:\n\nThe high density of EV charging zones in the northern and northeastern regions, such as around Sengkang and Punggol, can be attributed to the rise in the number of BTO (Build-to-Order) developments in these areas. As these new residential developments grow, the demand for EV infrastructure increases, leading to more concentrated distributions of charging points to meet the needs of the expanding population.\n\nIndustrial Zone Influence:\n\nThe large expanse of white areas in the west of Singapore is primarily due to the region being an industrial area (Tuas Industrial Area and Jurong Island), where the demand for EV charging stations is generally lower.\n\n\n\n1.1 Suitable Areas Lacking EV Charging Points\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n1.1.1 Springleaf/Lentor Area\n\nReasoning: They are developing residential areas in Singapore and EV charging infrastructure may not be prioritized yet, as foundational needs like roads, utilities, and public transport take precedence. \nProposed Solution: Build in more public EV charging stations in shared parking spaces when the residential spaces are more or less developed. \n\n\n1.1.2 Bukit Timah\n\nReasoning: These areas primarily consist of landed properties and they face limited availability of shared parking space to install public EV chargers. Furthermore, with private parking spaces like driveways and garages, residents are more likely to use home charging solutions, reducing the need for public chargers. \nProposed Solution: Given that Bukit Timah and Clementi are primarily made up of landed properties, residents have the advantage of installing solar panels on their rooftops to power home-based EV chargers. A hybrid solution that combines these private solar-powered chargers with community charging hubs can be considered. \n\n\n1.1.3 Queenstown\n\nReasoning: Queenstown is an older, more established area with older infrastructure that may not have been initially designed to accommodate modern EV charging needs.\nProposed Solution: With areas like Queenstown undergoing redevelopment under government plans, there is an opportunity to integrate EV charging infrastructure.\n\n\n1.1.4 Tuas and Jurong Island\n\nReasoning: Despite it being an industrial area, it has a potential for more solar-powered EV chargers to be built because of the high amount of sunlight they receive as seen in the Solar Irradiance map. \nProposed Solution: Establish solar-powered EV charging hubs specifically designed for industrial fleets and heavy electric vehicles (EV trucks). Incentives from the EV Heavy Vehicle (EHV) grant can be used to encourage logistics and manufacturing firms in Tuas to adopt electric fleets, creating a sustained demand for charging infrastructure.\n\n\n\n\n2. Solar Irradiance (GHI)\n\nThe map illustrates the Global Horizontal Irradiance (GHI) values across Singapore, measured in kilowatt-hours per square meter per year (kWh/m²/year), derived from regional solar GIS datasets. This is a key indicator of solar energy availability — essential for planning solar PV installations to support EV charging infrastructure.\n\nGHI values across Singapore range from ~1,596 to 1,692 kWh/m²/year, with higher irradiance concentrated in southern and eastern regions.\nTop-performing planning areas include:\n\nTuas and Jurong Island (West)\nChangi and East Coast (East)\nSouthern Islands & Sentosa (South)\n\n\n\n\nThese regions consistently show darker orange shades, indicating stronger solar exposure and thus higher energy generation potential per unit area.\n\n\n\nCentral and North-Central regions (e.g., Bukit Timah, Bishan) show slightly lower GHI values, likely due to a mix of topography (hills) and higher vegetation cover.\n\n\n\n3. Slope Analysis and Classification\n\n\n\nSlope Classification\n\n\nThe first map presents a reclassified slope analysis of Singapore derived from Shuttle Radar Topography Mission (SRTM) 30m DEM data. Slope is categorized into five classes: Gentle, Moderate, Moderately Steep, Steep, and Very Steep. The spatial distribution shows that:\n\nMajority of Singapore’s terrain falls under Gentle and Moderate categories, especially in central, north-eastern, and eastern regions.\nSteep and Very Steep areas are primarily concentrated in the Central Catchment Nature Reserve, Bukit Timah, and southern ridges.\nCoastal and reclaimed areas such as Tuas, Changi, and Jurong Island display flat terrain, making them structurally favorable for infrastructure development.\n\nThis baseline terrain classification helps identify terrain-constrained zones where solar-powered EV infrastructure may face installation challenges due to steep slopes.\n\n\n\n\n\n\n\n\n\nSlope + EV Charging Locations\n\n\n\n\n\n\n\n\nThe second map overlays the existing EV charging station distribution onto the slope classification layer. The integrated view reveals key insights:\n\nThe majority of EV charging stations are located within Gentle to Moderate slope areas, which is ideal for both construction and maintenance.\nThere is a noticeable avoidance of steep zones, confirming practical urban planning decisions that align with topographic suitability.\nThe North-East, Central, and East regions (e.g., Punggol, Ang Mo Kio, Tampines) show both high EV charging density and gentle terrain, suggesting these are strong candidate zones for solar integration on flat rooftops or open lots.\nThe zoom-in inset shows how even at a micro level, EV stations are clustered in flatter pockets within varied slope zones — reinforcing the role of slope as a critical spatial factor in siting decisions.\n\nSlope suitability analysis is essential when planning for infrastructure that involves hardware installation, such as solar panels and EV chargers. Steeper slopes not only increase installation difficulty and cost but may also pose safety or structural concerns. Hence, this slope-overlay method:\n\nAids in screening out unsuitable zones early in the planning phase\nReinforces the importance of combining topographic and infrastructural layers in GIS-based decision-making\nSupports the prioritization of flat terrain zones for solar-powered EV station deployment under Singapore’s Green Plan goals",
+    "crumbs": [
+      "Results and Analysis"
+    ]
   },
   {
     "objectID": "index.html",
@@ -26,6 +29,17 @@
     "title": "Overview",
     "section": "Project Schedule and Workload",
     "text": "Project Schedule and Workload"
+  },
+  {
+    "objectID": "Data Source.html",
+    "href": "Data Source.html",
+    "title": "Data Source",
+    "section": "",
+    "text": "Data\nDescription\n\n\n\n\nMasterPlan2019\nVector layer containing Singapore’s urban planning boundaries and land use zones. This was used to contextualize solar potential across different planning areas and identify zones suitable for EV charging station deployment.\n\n\nEV Charging Stations\nPoint dataset representing existing EV charging station locations across Singapore. This layer supported demand analysis and spatial proximity evaluations for potential solar-powered station expansions.\n\n\nEast Asia and Pacific Solar GIS Data\nRaster dataset from the Global Solar Atlas containing Global Horizontal Irradiance (GHI) values. GHI was used to assess solar energy potential by calculating average irradiance across Singapore’s planning areas, guiding site suitability for solar infrastructure deployment.\n\n\n\nAssuming that the root directory of this project is called ”Project”:\n\nCreate a subfolder called “data”\nInside “data” folder\n\nPlace the downloaded files into the folder \n\nExtract the files in the zipped files into the respective subfolders",
+    "crumbs": [
+      "Methodology",
+      "Data Source"
+    ]
   },
   {
     "objectID": "Data Preparation.html",
@@ -50,14 +64,47 @@
     ]
   },
   {
-    "objectID": "Data Source.html",
-    "href": "Data Source.html",
-    "title": "Data Source",
-    "section": "",
-    "text": "Data\nDescription\n\n\n\n\nMasterPlan2019\nVector layer containing Singapore’s urban planning boundaries and land use zones. This was used to contextualize solar potential across different planning areas and identify zones suitable for EV charging station deployment.\n\n\nEV Charging Stations\nPoint dataset representing existing EV charging station locations across Singapore. This layer supported demand analysis and spatial proximity evaluations for potential solar-powered station expansions.\n\n\nEast Asia and Pacific Solar GIS Data\nRaster dataset from the Global Solar Atlas containing Global Horizontal Irradiance (GHI) values. GHI was used to assess solar energy potential by calculating average irradiance across Singapore’s planning areas, guiding site suitability for solar infrastructure deployment.\n\n\n\nAssuming that the root directory of this project is called ”Project”:\n\nCreate a subfolder called “data”\nInside “data” folder\n\nPlace the downloaded files into the folder \n\nExtract the files in the zipped files into the respective subfolders",
+    "objectID": "Data Preparation.html#data-graphs",
+    "href": "Data Preparation.html#data-graphs",
+    "title": "Data Preparation",
+    "section": "2. Data Graphs",
+    "text": "2. Data Graphs\n\n2.1 Data Preparation\n\nOpen the EV Charging Stations dataset downloaded from LTADataMall.\nRun the following code to condense the number of EV charging stations found in one location\n\nThe output would be a CSV file, which you can now run as a delimited text layer on QGIS for further analysis. Open QGIS to proceed.\n\nCreate a new project. Click on Layer &gt; Add Layer &gt; Add Delimited Text Layer.\nInput the newly created ev_chargers_count.csv under file name, and name the layer as ev_chargers_count.\nUnder Geometry Definition, ensure that the X and Y coordinates are Longitude and Latitude respectively, and the geometry CRS is set to SVY21.\n\n\n\n2.2 Analyzing charger types\nUnderstanding the current distribution of charger types allows us to understand the prevalence of EVs, and the amount of energy required to power these EV stations. We will be using the DataPlotly plugin to derive this graph.\n\nOpen the DataPlotly plugin.\nSet plot type to Histogram\nSet X field to Type of Connector\nClick on Create Plot. The following should be the resulting graph:",
     "crumbs": [
       "Methodology",
-      "Data Source"
+      "Data Preparation"
+    ]
+  },
+  {
+    "objectID": "Future works.html",
+    "href": "Future works.html",
+    "title": "Future works",
+    "section": "",
+    "text": "Looking ahead, this project lays the groundwork for a nationwide network of smart, solar-powered EV charging stations seamlessly integrated into Singapore’s urban fabric. Real-time traffic data, predictive EV adoption trends, and energy storage capabilities can be incorporated to optimize grid performance. We can further expand into evaluating the suitability of existing car parks across Singapore by installing solar panels on surface-level car parks or on the rooftops of multi-storey car parks. These panels can convert solar energy into electricity to charge EVs parked on upper levels, maximizing land use and energy efficiency. Beyond charging infrastructure, this vision extends to creating self-sustaining energy hubs that not only power vehicles, but also feed clean energy back into the city—driving Singapore toward a smarter, greener future.",
+    "crumbs": [
+      "Results and Analysis",
+      "Future works"
+    ]
+  },
+  {
+    "objectID": "Future works.html#more-recommendations-solar-panel-installation-in-car-parks",
+    "href": "Future works.html#more-recommendations-solar-panel-installation-in-car-parks",
+    "title": "Future works",
+    "section": "More Recommendations: Solar Panel Installation in Car Parks",
+    "text": "More Recommendations: Solar Panel Installation in Car Parks\nTo support sustainable urban mobility and optimize land use, we recommend installing solar panels on the rooftops of HDB car parks—particularly in areas identified with high solar irradiance (see previous section). This strategy enables dual-purpose use of urban infrastructure: generating renewable energy while supporting electric vehicle (EV) charging needs.\n\nTarget Car Parks\n\n\n\n\n\n\n\n\n\n\n\n\n\nWe have excluded basement and mechanised car parks from this analysis due to structural limitations. The filtered results highlight multi-storey and open-air car parks as ideal candidates for rooftop solar installation.\n\n\nWhy Car Parks?\n\nUnshaded rooftop space with direct sun exposure\nProximity to EV demand zones (residential areas)\nFlat surface area ideal for panel mounting\nEfficient grid integration through existing electrical infrastructure\n\nSolar energy harvested here can directly power charging points located at higher levels of the car park, reducing dependency on the main grid and promoting decentralized energy generation.",
+    "crumbs": [
+      "Results and Analysis",
+      "Future works"
+    ]
+  },
+  {
+    "objectID": "Future works.html#estimated-costs-and-dimensions",
+    "href": "Future works.html#estimated-costs-and-dimensions",
+    "title": "Future works",
+    "section": "Estimated Costs and Dimensions",
+    "text": "Estimated Costs and Dimensions\n\n\n\n\n\n\n\nSpecification\nDetails\n\n\n\n\nTypical Panel Size\n1.7m x 1.0m (approx. 1.7m² per panel)\n\n\nPower Output per Panel\n~500 Wp (Watt-peak)\n\n\nAverage Cost per Panel\nSGD $300–$400 (before subsidies)\n\n\nInstallation & Inverter Cost\nSGD $1,500–$2,500 per system setup (variable)\n\n\nArea Needed for 1kWp Output\n~5–6 m²\n\n\nAverage Rooftop Size (MSCP)\n~1,000–1,500 m² (depending on location)\n\n\nPotential System Size\n150–250 kWp per car park",
+    "crumbs": [
+      "Results and Analysis",
+      "Future works"
     ]
   },
   {

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Results – SMT201-GISProject</title>
+<title>Results and Analysis – SMT201-GISProject</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -120,35 +120,62 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Results.html">Results and Analysis</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Results.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Results and Analysis</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Future works.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Future works</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#analysis-results" id="toc-analysis-results" class="nav-link active" data-scroll-target="#analysis-results">Analysis Results</a>
-  <ul class="collapse">
-  <li><a href="#spatial-distribution-of-ev-charging-points" id="toc-spatial-distribution-of-ev-charging-points" class="nav-link" data-scroll-target="#spatial-distribution-of-ev-charging-points">Spatial distribution of EV Charging Points</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
-  </ul></li>
+  <li><a href="#spatial-distribution-of-ev-charging-points" id="toc-spatial-distribution-of-ev-charging-points" class="nav-link active" data-scroll-target="#spatial-distribution-of-ev-charging-points">1. Spatial distribution of EV Charging Points</a></li>
+  <li><a href="#solar-irradiance-ghi" id="toc-solar-irradiance-ghi" class="nav-link" data-scroll-target="#solar-irradiance-ghi">2. Solar Irradiance (GHI)</a></li>
+  <li><a href="#slope-analysis-and-classification" id="toc-slope-analysis-and-classification" class="nav-link" data-scroll-target="#slope-analysis-and-classification">3. Slope Analysis and Classification</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Results</h1>
+<h1 class="title">Results and Analysis</h1>
 </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-body">
 
     
   
@@ -160,23 +187,151 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="analysis-results" class="level1">
-<h1>Analysis Results</h1>
 <section id="spatial-distribution-of-ev-charging-points" class="level3">
-<h3 class="anchored" data-anchor-id="spatial-distribution-of-ev-charging-points">Spatial distribution of EV Charging Points</h3>
-<section id="legend" class="level4">
-<h4 class="anchored" data-anchor-id="legend">Legend</h4>
-<p><img src="images/EVCP_Legend.png" class="img-fluid"></p>
+<h3 class="anchored" data-anchor-id="spatial-distribution-of-ev-charging-points">1. Spatial distribution of EV Charging Points</h3>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 72.5%;justify-content: center;">
+<p><img src="images/clipboard-2092692162.png" class="img-fluid" width="576"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 27.5%;justify-content: center;">
+<p><img src="images/EVCP_Legend.png" class="img-fluid" width="218"></p>
+</div>
+</div>
+</div>
+<p><strong>Key Insights from the Map:</strong></p>
+<ol type="1">
+<li><p><strong>CBD Areas:</strong></p>
+<ul>
+<li>Urban areas such as Marina Bay, Central Business District (CBD), and areas with high commercial activity (e.g., Orchard Road, Raffles Place) are likely to have a higher number of charging outlets due to higher demand from residents, businesses, and commuters.</li>
+</ul></li>
+<li><p><strong>Military Zones</strong></p>
+<ul>
+<li>The lack of EV charging zones in the northwestern part of Singapore can be attributed to the land being primarily used for military purposes, such as Tengah Air Base, Sungei Gedong Camp, and Lim Chu Kang, which is a mix of military facilities and cemetery land. This significantly limits the availability of space for EV charging infrastructure in these areas.</li>
+</ul></li>
+<li><p><strong>BTO Development:</strong></p>
+<ul>
+<li>The high density of EV charging zones in the northern and northeastern regions, such as around Sengkang and Punggol, can be attributed to the rise in the number of BTO (Build-to-Order) developments in these areas. As these new residential developments grow, the demand for EV infrastructure increases, leading to more concentrated distributions of charging points to meet the needs of the expanding population.</li>
+</ul></li>
+<li><p><strong>Industrial Zone Influence:</strong></p>
+<ul>
+<li>The large expanse of white areas in the west of Singapore is primarily due to the region being an industrial area (Tuas Industrial Area and Jurong Island), where the demand for EV charging stations is generally lower.</li>
+</ul></li>
+</ol>
+<section id="suitable-areas-lacking-ev-charging-points" class="level4">
+<h4 class="anchored" data-anchor-id="suitable-areas-lacking-ev-charging-points">1.1 Suitable Areas Lacking EV Charging Points</h4>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/clipboard-84245962.png" class="img-fluid"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/clipboard-1804722956.png" class="img-fluid" width="379"></p>
+</div>
+</div>
+</div>
+<section id="springleaflentor-area" class="level5">
+<h5 class="anchored" data-anchor-id="springleaflentor-area">1.1.1 Springleaf/Lentor Area</h5>
+<p><img src="images/clipboard-2540867851.png" class="img-fluid" width="490"></p>
+<p><strong>Reasoning</strong>: They are developing residential areas in Singapore and EV charging infrastructure may not be prioritized yet, as foundational needs like roads, utilities, and public transport take precedence.&nbsp;</p>
+<p><strong>Proposed Solution:</strong> Build in more public EV charging stations in shared parking spaces when the residential spaces are more or less developed.&nbsp;</p>
 </section>
-<section id="choropleth-map" class="level4">
-<h4 class="anchored" data-anchor-id="choropleth-map">Choropleth Map</h4>
+<section id="bukit-timah" class="level5">
+<h5 class="anchored" data-anchor-id="bukit-timah">1.1.2 Bukit Timah</h5>
+<p><img src="images/clipboard-2581204526.png" class="img-fluid" width="490"></p>
+<p><strong>Reasoning:</strong> These areas primarily consist of landed properties and they face limited availability of shared parking space to install public EV chargers. Furthermore, with private parking spaces like driveways and garages, residents are more likely to use home charging solutions, reducing the need for public chargers.&nbsp;</p>
+<p><strong>Proposed Solution:</strong> Given that Bukit Timah and Clementi are primarily made up of landed properties, residents have the advantage of installing solar panels on their rooftops to power home-based EV chargers. A hybrid solution that combines these private solar-powered chargers with community charging hubs can be considered.&nbsp;</p>
+</section>
+<section id="queenstown" class="level5">
+<h5 class="anchored" data-anchor-id="queenstown">1.1.3 Queenstown</h5>
+<p><img src="images/clipboard-188280490.png" class="img-fluid" width="479"></p>
+<p><strong>Reasoning:</strong> Queenstown is an older, more established area with older infrastructure that may not have been initially designed to accommodate modern EV charging needs.</p>
+<p><strong>Proposed Solution:</strong> With areas like Queenstown undergoing redevelopment under government plans, there is an opportunity to integrate EV charging infrastructure.</p>
+</section>
+<section id="tuas-and-jurong-island" class="level5">
+<h5 class="anchored" data-anchor-id="tuas-and-jurong-island">1.1.4 Tuas and Jurong Island</h5>
+<p><img src="images/clipboard-780687415.png" class="img-fluid" width="461"></p>
+<p><strong>Reasoning:</strong> Despite it being an industrial area, it has a potential for more solar-powered EV chargers to be built because of the high amount of sunlight they receive as seen in the Solar Irradiance map.&nbsp;</p>
+<p><strong>Proposed Solution:</strong> Establish solar-powered EV charging hubs specifically designed for industrial fleets and heavy electric vehicles (EV trucks). Incentives from the EV Heavy Vehicle (EHV) grant can be used to encourage logistics and manufacturing firms in Tuas to adopt electric fleets, creating a sustained demand for charging infrastructure.</p>
 </section>
 </section>
-<section id="section" class="level3">
-<h3 class="anchored" data-anchor-id="section"></h3>
+</section>
+<section id="solar-irradiance-ghi" class="level3">
+<h3 class="anchored" data-anchor-id="solar-irradiance-ghi">2. Solar Irradiance (GHI)</h3>
+<p><img src="images/GHI.png" class="img-fluid" width="835"></p>
+<p>The map illustrates the <strong>Global Horizontal Irradiance (GHI)</strong> values across Singapore, measured in <strong>kilowatt-hours per square meter per year (kWh/m²/year)</strong>, derived from regional solar GIS datasets. This is a key indicator of <strong>solar energy availability</strong> — essential for planning solar PV installations to support EV charging infrastructure.</p>
+<ul>
+<li><p><strong>GHI values across Singapore range from ~1,596 to 1,692 kWh/m²/year</strong>, with higher irradiance concentrated in <strong>southern and eastern regions</strong>.</p>
+<p><strong>Top-performing planning areas include:</strong></p>
+<ul>
+<li><p><strong>Tuas and Jurong Island</strong> (West)</p></li>
+<li><p><strong>Changi and East Coast</strong> (East)</p></li>
+<li><p><strong>Southern Islands &amp; Sentosa</strong> (South)</p></li>
+</ul></li>
+</ul>
+<!-- -->
+<ul>
+<li>These regions consistently show <strong>darker orange shades</strong>, indicating stronger solar exposure and thus <strong>higher energy generation potential</strong> per unit area.</li>
+</ul>
+<!-- -->
+<ul>
+<li><strong>Central and North-Central regions</strong> (e.g., Bukit Timah, Bishan) show slightly lower GHI values, likely due to a mix of topography (hills) and higher vegetation cover.</li>
+</ul>
+</section>
+<section id="slope-analysis-and-classification" class="level3">
+<h3 class="anchored" data-anchor-id="slope-analysis-and-classification">3. Slope Analysis and Classification</h3>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><img src="images/Slope.png" class="img-fluid figure-img" width="816"></p>
+<figcaption>Slope Classification</figcaption>
+</figure>
+</div>
+<p>The first map presents a <strong>reclassified slope analysis</strong> of Singapore derived from Shuttle Radar Topography Mission (SRTM) 30m DEM data. Slope is categorized into five classes: <em>Gentle, Moderate, Moderately Steep, Steep,</em> and <em>Very Steep</em>. The spatial distribution shows that:</p>
+<ul>
+<li><p><strong>Majority of Singapore’s terrain</strong> falls under <em>Gentle</em> and <em>Moderate</em> categories, especially in central, north-eastern, and eastern regions.</p></li>
+<li><p><em>Steep</em> and <em>Very Steep</em> areas are primarily concentrated in the <strong>Central Catchment Nature Reserve</strong>, <strong>Bukit Timah</strong>, and <strong>southern ridges</strong>.</p></li>
+<li><p>Coastal and reclaimed areas such as <strong>Tuas, Changi</strong>, and <strong>Jurong Island</strong> display flat terrain, making them structurally favorable for infrastructure development.</p></li>
+</ul>
+<p>This baseline terrain classification helps identify <strong>terrain-constrained zones</strong> where solar-powered EV infrastructure may face installation challenges due to steep slopes.</p>
+<div>
+
+</div>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/Closer look of slope.png" class="img-fluid figure-img" width="559"></p>
+<figcaption>Slope + EV Charging Locations</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="images/clipboard-344390554.png" class="img-fluid" width="556"></p>
+</div>
+</div>
+</div>
+<p>The second map overlays the existing <strong>EV charging station distribution</strong> onto the slope classification layer. The integrated view reveals key insights:</p>
+<ul>
+<li><p>The <strong>majority of EV charging stations</strong> are located within <strong>Gentle to Moderate</strong> slope areas, which is ideal for both construction and maintenance.</p></li>
+<li><p>There is a noticeable <strong>avoidance of steep zones</strong>, confirming practical urban planning decisions that align with topographic suitability.</p></li>
+<li><p>The <strong>North-East, Central, and East</strong> regions (e.g., Punggol, Ang Mo Kio, Tampines) show both <strong>high EV charging density</strong> and <strong>gentle terrain</strong>, suggesting these are strong candidate zones for <strong>solar integration on flat rooftops or open lots</strong>.</p></li>
+<li><p>The <strong>zoom-in inset</strong> shows how even at a micro level, EV stations are <strong>clustered in flatter pockets</strong> within varied slope zones — reinforcing the role of slope as a critical spatial factor in siting decisions.</p></li>
+</ul>
+<p>Slope suitability analysis is essential when planning for <strong>infrastructure that involves hardware installation</strong>, such as solar panels and EV chargers. Steeper slopes not only increase installation difficulty and cost but may also pose safety or structural concerns. Hence, this slope-overlay method:</p>
+<ul>
+<li><p>Aids in <strong>screening out unsuitable zones</strong> early in the planning phase</p></li>
+<li><p>Reinforces the importance of combining <strong>topographic and infrastructural layers</strong> in GIS-based decision-making</p></li>
+<li><p>Supports the prioritization of <strong>flat terrain zones for solar-powered EV station deployment</strong> under Singapore’s Green Plan goals</p></li>
+</ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
