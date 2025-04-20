@@ -54,7 +54,12 @@ The output would be a CSV file, which you can now run as a delimited text layer 
 Understanding the current distribution of charger types allows us to understand the prevalence of EVs, and the amount of energy required to power these EV stations. We will be using the DataPlotly plugin to derive this graph.
 
 1.  Open the DataPlotly plugin.
+
 2.  Set plot type to Histogram
+
 3.  Set X field to **Type of Connector**
+
 4.  Click on Create Plot. The following should be the resulting graph:\
     ![](images/clipboard-340631990.png)
+
+    CCS2 chargers use a different charging system of DC circuits as compared to Type 2 chargers of AC circuits, and CCS2 chargers would require more solar power to run.
