@@ -7,39 +7,43 @@
     "text": "Analysis Results\n\nSpatial distribution of EV Charging Points\n\nLegend\n\n\n\nChoropleth Map"
   },
   {
-    "objectID": "Overview.html",
-    "href": "Overview.html",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "Overview",
     "section": "",
     "text": "Singapore’s energy grid, heavily reliant on natural gas, faces increasing pressure from rising electric vehicle (EV) adoption. With limited land, there is a need to identify optimal sites for solar-powered EV charging stations that integrate solar energy harvesting and storage to reduce dependence on the grid and support Green Plan 2030 goals.\n\n\n\nWe propose a GIS-based multi-criteria analysis to assess land suitability for solar-powered EV charging stations. By analysing factors like solar potential, land availability, and EV demand, we aim to identify ideal locations for these stations. This solution aims to support Singapore’s target of 60,000 charging points by 2030 and leverages solar storage technologies (e.g. lithium-ion batteries) to ensure efficient operation, contributing to sustainable mobility and decarbonisation under the Green Plan 2030."
   },
   {
-    "objectID": "Overview.html#introduction",
-    "href": "Overview.html#introduction",
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
     "title": "Overview",
     "section": "",
     "text": "Singapore’s energy grid, heavily reliant on natural gas, faces increasing pressure from rising electric vehicle (EV) adoption. With limited land, there is a need to identify optimal sites for solar-powered EV charging stations that integrate solar energy harvesting and storage to reduce dependence on the grid and support Green Plan 2030 goals.\n\n\n\nWe propose a GIS-based multi-criteria analysis to assess land suitability for solar-powered EV charging stations. By analysing factors like solar potential, land availability, and EV demand, we aim to identify ideal locations for these stations. This solution aims to support Singapore’s target of 60,000 charging points by 2030 and leverages solar storage technologies (e.g. lithium-ion batteries) to ensure efficient operation, contributing to sustainable mobility and decarbonisation under the Green Plan 2030."
   },
   {
-    "objectID": "Overview.html#project-schedule-and-workload",
-    "href": "Overview.html#project-schedule-and-workload",
+    "objectID": "index.html#project-schedule-and-workload",
+    "href": "index.html#project-schedule-and-workload",
     "title": "Overview",
     "section": "Project Schedule and Workload",
     "text": "Project Schedule and Workload"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "SMT201-GISProject",
-    "section": "",
-    "text": "Welcome to SMT201 GIS for Urban Planning Project website."
   },
   {
     "objectID": "Data Preparation.html",
     "href": "Data Preparation.html",
     "title": "Data Preparation",
     "section": "",
-    "text": "Hi",
+    "text": "1. Load MP19SZ \n2. Click on “Processing” → “Toolbox” → Select “Join Attributes by Location (Summary)” → Set  “Join to features in” as “MP19SZ” → Set “By comparing to” as “EV_Points” → Select “Intersect, Contain, Are Within” for the features → Select “Count” for summaries to calculate→ Run \n3. Right Click on this new joined layer → “Export” → “save Features As” → Save it as a GeoPackage named GP and save the layer as “EV_Points_Choropleth” \n4. Right click on this layer → Select “Properties” → Click on “Symbology” → Choose Graduated style → Set Value as “No. of Charging Outlets Count” → Select Natural Breaks (Jenks) for classification → Click Classify → Apply\n\n\n\n\n\n\n2. Right click on MP19 → “Open Attribute Table” → “Select by Expression” → Write this in the expression:  “Description” LIKE ‘%COMMERCIAL%’ OR “Description” LIKE ‘%RESIDENTIAL%’ → “Select Features” \n3. Right click on MP19 → “Export” → “Save Selected Features As” → Save it as a Geopackage named GP and save layer as “Suitable_Land_Use” \n4. Right click on “Suitable_Land_Use” → “Open Attribute Table” → “Field Calculator” → Set the output field name as “Land_Type” and let the output field type be “Text (String)” → Set the expression as: regexp_replace(regexp_replace(“Description”, ‘.*&lt;th&gt;LU_DESC&lt;/th&gt; &lt;td&gt;’, ’‘),’&lt;/td&gt;.*‘,’’) → Apply \n5. Right click on “Suitable_Land_Use” → “Toggle Editing” → Save \n6. Right click on “Suitable_Land_Use” → “Properties” → “Symbology” → Change symbology to “Categorized” → Select “Land_Type” as value field → Click “Classify” → Click “Ok” \n7. Load the “EV_Points” layer and find suitable land types that are lacking EV charging points.",
+    "crumbs": [
+      "Methodology",
+      "Data Preparation"
+    ]
+  },
+  {
+    "objectID": "Data Preparation.html#chloropleth-maps",
+    "href": "Data Preparation.html#chloropleth-maps",
+    "title": "Data Preparation",
+    "section": "",
+    "text": "1. Load MP19SZ \n2. Click on “Processing” → “Toolbox” → Select “Join Attributes by Location (Summary)” → Set  “Join to features in” as “MP19SZ” → Set “By comparing to” as “EV_Points” → Select “Intersect, Contain, Are Within” for the features → Select “Count” for summaries to calculate→ Run \n3. Right Click on this new joined layer → “Export” → “save Features As” → Save it as a GeoPackage named GP and save the layer as “EV_Points_Choropleth” \n4. Right click on this layer → Select “Properties” → Click on “Symbology” → Choose Graduated style → Set Value as “No. of Charging Outlets Count” → Select Natural Breaks (Jenks) for classification → Click Classify → Apply\n\n\n\n\n\n\n2. Right click on MP19 → “Open Attribute Table” → “Select by Expression” → Write this in the expression:  “Description” LIKE ‘%COMMERCIAL%’ OR “Description” LIKE ‘%RESIDENTIAL%’ → “Select Features” \n3. Right click on MP19 → “Export” → “Save Selected Features As” → Save it as a Geopackage named GP and save layer as “Suitable_Land_Use” \n4. Right click on “Suitable_Land_Use” → “Open Attribute Table” → “Field Calculator” → Set the output field name as “Land_Type” and let the output field type be “Text (String)” → Set the expression as: regexp_replace(regexp_replace(“Description”, ‘.*&lt;th&gt;LU_DESC&lt;/th&gt; &lt;td&gt;’, ’‘),’&lt;/td&gt;.*‘,’’) → Apply \n5. Right click on “Suitable_Land_Use” → “Toggle Editing” → Save \n6. Right click on “Suitable_Land_Use” → “Properties” → “Symbology” → Change symbology to “Categorized” → Select “Land_Type” as value field → Click “Classify” → Click “Ok” \n7. Load the “EV_Points” layer and find suitable land types that are lacking EV charging points.",
     "crumbs": [
       "Methodology",
       "Data Preparation"
@@ -50,20 +54,43 @@
     "href": "Data Source.html",
     "title": "Data Source",
     "section": "",
-    "text": "File Name\nDescription\nSource\n\n\n\n\nMasterPlan2019",
+    "text": "Data\nDescription\n\n\n\n\nMasterPlan2019\nVector layer containing Singapore’s urban planning boundaries and land use zones. This was used to contextualize solar potential across different planning areas and identify zones suitable for EV charging station deployment.\n\n\nEV Charging Stations\nPoint dataset representing existing EV charging station locations across Singapore. This layer supported demand analysis and spatial proximity evaluations for potential solar-powered station expansions.\n\n\nEast Asia and Pacific Solar GIS Data\nRaster dataset from the Global Solar Atlas containing Global Horizontal Irradiance (GHI) values. GHI was used to assess solar energy potential by calculating average irradiance across Singapore’s planning areas, guiding site suitability for solar infrastructure deployment.\n\n\n\nAssuming that the root directory of this project is called ”Project”:\n\nCreate a subfolder called “data”\nInside “data” folder\n\nPlace the downloaded files into the folder \n\nExtract the files in the zipped files into the respective subfolders",
     "crumbs": [
       "Methodology",
       "Data Source"
     ]
   },
   {
-    "objectID": "Methodology.html#chloropleth-maps",
-    "href": "Methodology.html#chloropleth-maps",
-    "title": "Methodology",
-    "section": "1. Chloropleth Maps",
-    "text": "1. Chloropleth Maps\n\n1.1 No. of EV Charging Points\n1. Load MP19SZ \n2. Click on “Processing” → “Toolbox” → Select “Join Attributes by Location (Summary)” → Set  “Join to features in” as “MP19SZ” → Set “By comparing to” as “EV_Points” → Select “Intersect, Contain, Are Within” for the features → Select “Count” for summaries to calculate→ Run \n3. Right Click on this new joined layer → “Export” → “save Features As” → Save it as a GeoPackage named GP and save the layer as “EV_Points_Choropleth” \n4. Right click on this layer → Select “Properties” → Click on “Symbology” → Choose Graduated style → Set Value as “No. of Charging Outlets Count” → Select Natural Breaks (Jenks) for classification → Click Classify → Apply\n\n\n1.2 Areas lacking EV Charging Points\n\n\n1. Load MP19 \n2. Right click on MP19 → “Open Attribute Table” → “Select by Expression” → Write this in the expression:  “Description” LIKE ‘%COMMERCIAL%’ OR “Description” LIKE ‘%RESIDENTIAL%’ → “Select Features” \n3. Right click on MP19 → “Export” → “Save Selected Features As” → Save it as a Geopackage named GP and save layer as “Suitable_Land_Use” \n4. Right click on “Suitable_Land_Use” → “Open Attribute Table” → “Field Calculator” → Set the output field name as “Land_Type” and let the output field type be “Text (String)” → Set the expression as: regexp_replace(regexp_replace(“Description”, ‘.*&lt;th&gt;LU_DESC&lt;/th&gt; &lt;td&gt;’, ’‘),’&lt;/td&gt;.*‘,’’) → Apply \n5. Right click on “Suitable_Land_Use” → “Toggle Editing” → Save \n6. Right click on “Suitable_Land_Use” → “Properties” → “Symbology” → Change symbology to “Categorized” → Select “Land_Type” as value field → Click “Classify” → Click “Ok” \n7. Load the “EV_Points” layer and find suitable land types that are lacking EV charging points.",
+    "objectID": "Research.html",
+    "href": "Research.html",
+    "title": "Research",
+    "section": "",
+    "text": "The integration of Geographic Information Systems (GIS) into solar energy planning has become increasingly vital in supporting sustainable infrastructure such as electric vehicle (EV) charging stations. Several studies have explored GIS-driven methodologies for optimal site selection by combining spatial data with multi-criteria decision analysis (MCDA).\nA study by Yildiz et al. (2023) on the Ankara-Istanbul highway demonstrated how GIS-based suitability analysis can identify optimal solar EV charging sites using layers like solar irradiance, traffic density, and land availability. This approach is particularly relevant to Singapore, where land constraints and infrastructure integration are key considerations.\nSimilarly, De Waal et al. (2022) used GIS to evaluate residential rooftop PV potential in Apeldoorn, Netherlands. Their policy-driven MCDA model shows how solar potential mapping can guide urban solar initiatives—a concept applicable to Singapore’s Housing and Development Board (HDB) precincts and transport nodes.\nIn a broader context, a review by Sharma & Lee (2021) introduced a strategic deployment framework for GIS-optimized EV charging infrastructure, emphasizing the value of layering environmental (e.g. GHI), infrastructural, and demographic data. Their multi-criteria approach aligns closely with this project’s goal to identify high solar potential zones for future solar-powered EV charging deployment.\nThese studies collectively underscore the importance of leveraging GIS for site-specific, data-driven planning of clean energy systems, supporting Singapore’s Green Plan 2030 objectives and the push toward a low-carbon transportation ecosystem.",
     "crumbs": [
-      "Methodology"
+      "Methodology",
+      "Research"
+    ]
+  },
+  {
+    "objectID": "Research.html#literature-review",
+    "href": "Research.html#literature-review",
+    "title": "Research",
+    "section": "",
+    "text": "The integration of Geographic Information Systems (GIS) into solar energy planning has become increasingly vital in supporting sustainable infrastructure such as electric vehicle (EV) charging stations. Several studies have explored GIS-driven methodologies for optimal site selection by combining spatial data with multi-criteria decision analysis (MCDA).\nA study by Yildiz et al. (2023) on the Ankara-Istanbul highway demonstrated how GIS-based suitability analysis can identify optimal solar EV charging sites using layers like solar irradiance, traffic density, and land availability. This approach is particularly relevant to Singapore, where land constraints and infrastructure integration are key considerations.\nSimilarly, De Waal et al. (2022) used GIS to evaluate residential rooftop PV potential in Apeldoorn, Netherlands. Their policy-driven MCDA model shows how solar potential mapping can guide urban solar initiatives—a concept applicable to Singapore’s Housing and Development Board (HDB) precincts and transport nodes.\nIn a broader context, a review by Sharma & Lee (2021) introduced a strategic deployment framework for GIS-optimized EV charging infrastructure, emphasizing the value of layering environmental (e.g. GHI), infrastructural, and demographic data. Their multi-criteria approach aligns closely with this project’s goal to identify high solar potential zones for future solar-powered EV charging deployment.\nThese studies collectively underscore the importance of leveraging GIS for site-specific, data-driven planning of clean energy systems, supporting Singapore’s Green Plan 2030 objectives and the push toward a low-carbon transportation ecosystem.",
+    "crumbs": [
+      "Methodology",
+      "Research"
+    ]
+  },
+  {
+    "objectID": "Research.html#references",
+    "href": "Research.html#references",
+    "title": "Research",
+    "section": "References",
+    "text": "References\n\nDe Waal, E., Bakker, C., & Korevaar, G. (2022). Assessment of policy-based residential solar PV potential using GIS-based multicriteria decision analysis: A case study of Apeldoorn, The Netherlands. Renewable and Sustainable Energy Reviews, 165, 112575. https://doi.org/10.1016/j.egypro.2017.09.544\nSharma, S., & Lee, H. (2021). Strategic deployment of GIS-optimized solar charging stations for electric vehicles: A multi-criteria decision-making approach. Sustainable Cities and Society, 75, 103356. https://doi.org/10.1016/j.ecmx.2024.100712\nYildiz, A., Aydin, N. Y., & Aydin, N. (2023). GIS-based optimum site selection for solar electric vehicle charging station: Ankara–Istanbul highway case. Renewable Energy, 206, 758–770. https://doi.org/10.5194/isprs-archives-XLVI-4-W5-2021-267-2021",
+    "crumbs": [
+      "Methodology",
+      "Research"
     ]
   }
 ]

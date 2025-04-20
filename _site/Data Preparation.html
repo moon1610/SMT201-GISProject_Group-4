@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./Overview.html"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Overview</span></a>
   </li>  
   <li class="nav-item">
@@ -110,10 +110,6 @@ ul.task-list li input[type="checkbox"] {
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
   <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
 <span class="menu-text">Team</span></a>
@@ -149,6 +145,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./Research.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Research</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./Data Source.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Source</span></a>
   </div>
@@ -164,8 +166,19 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#chloropleth-maps" id="toc-chloropleth-maps" class="nav-link active" data-scroll-target="#chloropleth-maps">1. Chloropleth Maps</a>
+  <ul class="collapse">
+  <li><a href="#no.-of-ev-charging-points" id="toc-no.-of-ev-charging-points" class="nav-link" data-scroll-target="#no.-of-ev-charging-points">1.1 No.&nbsp;of EV Charging Points</a></li>
+  <li><a href="#areas-lacking-ev-charging-points" id="toc-areas-lacking-ev-charging-points" class="nav-link" data-scroll-target="#areas-lacking-ev-charging-points">1.2 Areas lacking EV Charging Points</a></li>
+  <li><a href="#load-mp19" id="toc-load-mp19" class="nav-link" data-scroll-target="#load-mp19">1. Load MP19&nbsp;</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -189,9 +202,30 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Hi</p>
+<section id="chloropleth-maps" class="level2">
+<h2 class="anchored" data-anchor-id="chloropleth-maps">1. Chloropleth Maps</h2>
+<section id="no.-of-ev-charging-points" class="level3">
+<h3 class="anchored" data-anchor-id="no.-of-ev-charging-points">1.1 No.&nbsp;of EV Charging Points</h3>
+<p>1. Load MP19SZ&nbsp;</p>
+<p>2. Click on “Processing” → “Toolbox” → Select “Join Attributes by Location (Summary)” → Set&nbsp; “Join to features in” as “MP19SZ” → Set “By comparing to” as “EV_Points” → Select “Intersect, Contain, Are Within” for the features → Select “Count” for summaries to calculate→ Run&nbsp;</p>
+<p>3. Right Click on this new joined layer → “Export” → “save Features As” → Save it as a GeoPackage named GP and save the layer as “EV_Points_Choropleth”&nbsp;</p>
+<p>4. Right click on this layer → Select “Properties” → Click on “Symbology” → Choose Graduated style → Set Value as “No.&nbsp;of Charging Outlets Count” → Select Natural Breaks (Jenks) for classification → Click Classify → Apply</p>
+</section>
+<section id="areas-lacking-ev-charging-points" class="level3">
+<h3 class="anchored" data-anchor-id="areas-lacking-ev-charging-points">1.2 Areas lacking EV Charging Points</h3>
+</section>
+<section id="load-mp19" class="level3">
+<h3 class="anchored" data-anchor-id="load-mp19">1. Load MP19&nbsp;</h3>
+<p>2. Right click on MP19 → “Open Attribute Table” → “Select by Expression” → Write this in the expression:&nbsp; “Description” LIKE ‘%COMMERCIAL%’ OR “Description” LIKE ‘%RESIDENTIAL%’ → “Select Features”&nbsp;</p>
+<p>3. Right click on MP19 → “Export” → “Save Selected Features As” → Save it as a Geopackage named GP and save layer as “Suitable_Land_Use”&nbsp;</p>
+<p>4. Right click on “Suitable_Land_Use” → “Open Attribute Table” → “Field Calculator” → Set the output field name as “Land_Type” and let the output field type be “Text (String)” → Set the expression as: regexp_replace(regexp_replace(“Description”, ‘.*&lt;th&gt;LU_DESC&lt;/th&gt; &lt;td&gt;’, ’‘),’&lt;/td&gt;.*‘,’’) → Apply&nbsp;</p>
+<p>5. Right click on “Suitable_Land_Use” → “Toggle Editing” → Save&nbsp;</p>
+<p>6. Right click on “Suitable_Land_Use” → “Properties” → “Symbology” → Change symbology to “Categorized” → Select “Land_Type” as value field → Click “Classify” → Click “Ok”&nbsp;</p>
+<p>7. Load the “EV_Points” layer and find suitable land types that are lacking EV charging points.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

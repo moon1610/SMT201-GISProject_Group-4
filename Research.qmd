@@ -1,0 +1,24 @@
+---
+title: "Research"
+format: html
+---
+
+## Literature Review
+
+The integration of Geographic Information Systems (GIS) into solar energy planning has become increasingly vital in supporting sustainable infrastructure such as electric vehicle (EV) charging stations. Several studies have explored GIS-driven methodologies for optimal site selection by combining spatial data with multi-criteria decision analysis (MCDA).
+
+A study by Yildiz et al. (2023) on the **Ankara-Istanbul highway** demonstrated how **GIS-based suitability analysis** can identify optimal solar EV charging sites using layers like solar irradiance, traffic density, and land availability. This approach is particularly relevant to Singapore, where land constraints and infrastructure integration are key considerations.
+
+Similarly, De Waal et al. (2022) used GIS to evaluate **residential rooftop PV potential** in Apeldoorn, Netherlands. Their policy-driven MCDA model shows how **solar potential mapping** can guide urban solar initiatives—a concept applicable to Singapore’s Housing and Development Board (HDB) precincts and transport nodes.
+
+In a broader context, a review by Sharma & Lee (2021) introduced a **strategic deployment framework** for GIS-optimized EV charging infrastructure, emphasizing the value of layering **environmental (e.g. GHI), infrastructural, and demographic data**. Their multi-criteria approach aligns closely with this project’s goal to identify high solar potential zones for future solar-powered EV charging deployment.
+
+These studies collectively underscore the importance of leveraging GIS for **site-specific, data-driven planning** of clean energy systems, supporting Singapore’s Green Plan 2030 objectives and the push toward a low-carbon transportation ecosystem.
+
+## References
+
+1.  De Waal, E., Bakker, C., & Korevaar, G. (2022). *Assessment of policy-based residential solar PV potential using GIS-based multicriteria decision analysis: A case study of Apeldoorn, The Netherlands*. Renewable and Sustainable Energy Reviews, 165, 112575. <https://doi.org/10.1016/j.egypro.2017.09.544>
+
+2.  Sharma, S., & Lee, H. (2021). *Strategic deployment of GIS-optimized solar charging stations for electric vehicles: A multi-criteria decision-making approach*. Sustainable Cities and Society, 75, 103356. <https://doi.org/10.1016/j.ecmx.2024.100712>
+
+3.  Yildiz, A., Aydin, N. Y., & Aydin, N. (2023). *GIS-based optimum site selection for solar electric vehicle charging station: Ankara–Istanbul highway case*. Renewable Energy, 206, 758–770. <https://doi.org/10.5194/isprs-archives-XLVI-4-W5-2021-267-2021>

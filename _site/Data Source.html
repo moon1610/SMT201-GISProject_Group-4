@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./Overview.html"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Overview</span></a>
   </li>  
   <li class="nav-item">
@@ -110,10 +110,6 @@ ul.task-list li input[type="checkbox"] {
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
   <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
 <span class="menu-text">Team</span></a>
@@ -145,6 +141,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="./Methodology.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Methodology</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Research.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Research</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -192,29 +194,34 @@ ul.task-list li input[type="checkbox"] {
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th><strong>File Name</strong></th>
-<th><strong>Description</strong></th>
-<th><strong>Source</strong></th>
+<th><h3 id="data" class="anchored"><strong>Data</strong></h3></th>
+<th><h3 id="description" class="anchored"><strong>Description</strong></h3></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>MasterPlan2019</td>
-<td></td>
-<td></td>
+<td><a href="https://data.gov.sg/datasets?query=master+plan+subzone&amp;page=1&amp;resultId=d_0900fdcfdb4666fe2a630f37a532fc06">MasterPlan2019</a></td>
+<td>Vector layer containing Singapore’s urban planning boundaries and land use zones. This was used to contextualize solar potential across different planning areas and identify zones suitable for EV charging station deployment.</td>
 </tr>
 <tr class="even">
-<td></td>
-<td></td>
-<td></td>
+<td><a href="https://datamall.lta.gov.sg/content/datamall/en/static-data.html#Electric%20Vehicle%20Charging%20Network">EV Charging Stations</a></td>
+<td>Point dataset representing existing EV charging station locations across Singapore. This layer supported demand analysis and spatial proximity evaluations for potential solar-powered station expansions.</td>
 </tr>
 <tr class="odd">
-<td></td>
-<td></td>
-<td></td>
+<td><a href="https://solargis.com/resources/free-maps-and-gis-data">East Asia and Pacific Solar GIS Data</a></td>
+<td>Raster dataset from the Global Solar Atlas containing Global Horizontal Irradiance (GHI) values. GHI was used to assess solar energy potential by calculating average irradiance across Singapore’s planning areas, guiding site suitability for solar infrastructure deployment.</td>
 </tr>
 </tbody>
 </table>
+<p>Assuming that the root directory of this project is called ”Project”:</p>
+<ul>
+<li><p>Create a subfolder called “data”</p></li>
+<li><p>Inside “data” folder</p>
+<ul>
+<li>Place the downloaded files into the folder&nbsp;</li>
+</ul></li>
+<li><p>Extract the files in the zipped files into the respective subfolders</p></li>
+</ul>
 
 
 

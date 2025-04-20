@@ -3,36 +3,6 @@ title: "Methodology"
 format: html
 ---
 
-# Data Preparation
+![](images/Pastel How To Be Successful Flowchart Infographic Graph.png)
 
-# Preparation Procedures
-
-## 1. Chloropleth Maps
-
-### 1.1 No. of EV Charging Points
-
-1\. Load MP19SZ 
-
-2\. Click on “Processing” → “Toolbox” → Select “Join Attributes by Location (Summary)” → Set  “Join to features in” as “MP19SZ” → Set “By comparing to” as “EV_Points” → Select “Intersect, Contain, Are Within” for the features → Select “Count” for summaries to calculate→ Run 
-
-3\. Right Click on this new joined layer → “Export” → “save Features As” → Save it as a GeoPackage named GP and save the layer as “EV_Points_Choropleth” 
-
-4\. Right click on this layer → Select “Properties” → Click on “Symbology” → Choose Graduated style → Set Value as “No. of Charging Outlets Count” → Select Natural Breaks (Jenks) for classification → Click Classify → Apply
-
-### 1.2 Areas lacking EV Charging Points
-
-### 1. Load MP19 
-
-2\. Right click on MP19 → “Open Attribute Table” → “Select by Expression” → Write this in the expression:  "Description" LIKE '%COMMERCIAL%' OR "Description" LIKE '%RESIDENTIAL%' → “Select Features” 
-
-3\. Right click on MP19 → “Export” → “Save Selected Features As” → Save it as a Geopackage named GP and save layer as “Suitable_Land_Use” 
-
-4\. Right click on “Suitable_Land_Use” → “Open Attribute Table” → “Field Calculator” → Set the output field name as “Land_Type” and let the output field type be “Text (String)” → Set the expression as: regexp_replace(regexp_replace("Description", '.\*\<th\>LU_DESC\</th\> \<td\>', ''), '\</td\>.\*', '') → Apply 
-
-5\. Right click on “Suitable_Land_Use” → “Toggle Editing” → Save 
-
-6\. Right click on “Suitable_Land_Use” → “Properties” → “Symbology” → Change symbology to “Categorized” → Select “Land_Type” as value field → Click “Classify” → Click “Ok” 
-
-7\. Load the “EV_Points” layer and find suitable land types that are lacking EV charging points.
-
-\
+# 

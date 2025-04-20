@@ -3,8 +3,22 @@ title: "Data Source"
 format: html
 ---
 
-| **File Name**  | **Description** | **Source** |
-|----------------|-----------------|------------|
-| MasterPlan2019 |                 |            |
-|                |                 |            |
-|                |                 |            |
++----------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| ### **Data**                                                                                                                     | ### **Description**                                                                                                                                                                                                                                                               |
++==================================================================================================================================+===================================================================================================================================================================================================================================================================================+
+| [MasterPlan2019](https://data.gov.sg/datasets?query=master+plan+subzone&page=1&resultId=d_0900fdcfdb4666fe2a630f37a532fc06)      | Vector layer containing Singapore’s urban planning boundaries and land use zones. This was used to contextualize solar potential across different planning areas and identify zones suitable for EV charging station deployment.                                                  |
++----------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| [EV Charging Stations](https://datamall.lta.gov.sg/content/datamall/en/static-data.html#Electric%20Vehicle%20Charging%20Network) | Point dataset representing existing EV charging station locations across Singapore. This layer supported demand analysis and spatial proximity evaluations for potential solar-powered station expansions.                                                                        |
++----------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| [East Asia and Pacific Solar GIS Data](https://solargis.com/resources/free-maps-and-gis-data)                                    | Raster dataset from the Global Solar Atlas containing Global Horizontal Irradiance (GHI) values. GHI was used to assess solar energy potential by calculating average irradiance across Singapore’s planning areas, guiding site suitability for solar infrastructure deployment. |
++----------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Assuming that the root directory of this project is called ”Project”:
+
+-   Create a subfolder called "data"
+
+-   Inside "data" folder
+
+    -   Place the downloaded files into the folder 
+
+-   Extract the files in the zipped files into the respective subfolders

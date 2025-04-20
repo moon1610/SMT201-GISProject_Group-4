@@ -6,7 +6,7 @@ website:
   navbar:
     left:
       - text: Overview
-        href: Overview.qmd
+        href: index.qmd
       - text: Methodology
         href: Methodology.qmd
       - text: Results and Analysis
@@ -16,8 +16,6 @@ website:
       - text: Poster
         href: Poster.qmd
     right:
-      - href: index.qmd
-        text: Home
       - text: Team
         href: about.qmd
   sidebar: 
@@ -26,6 +24,7 @@ website:
       background: light
       contents:
         - Methodology.qmd
+        - Research.qmd
         - Data Source.qmd
         - Data Preparation.qmd
         
