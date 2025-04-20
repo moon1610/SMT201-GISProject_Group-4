@@ -3,6 +3,6 @@ title: "Methodology"
 format: html
 ---
 
-![](images/Pastel How To Be Successful Flowchart Infographic Graph.png)
+![](images/Pastel%20How%20To%20Be%20Successful%20Flowchart%20Infographic%20Graph.png)
 
 # 

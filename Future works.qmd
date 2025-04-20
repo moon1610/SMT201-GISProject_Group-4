@@ -21,13 +21,13 @@ We have excluded basement and mechanised car parks from this analysis due to str
 
 ### **Why Car Parks?**
 
--    **Unshaded rooftop space** with direct sun exposure
+-   **Unshaded rooftop space** with direct sun exposure
 
--    **Proximity to EV demand zones** (residential areas)
+-   **Proximity to EV demand zones** (residential areas)
 
--    **Flat surface area** ideal for panel mounting
+-   **Flat surface area** ideal for panel mounting
 
--    **Efficient grid integration** through existing electrical infrastructure
+-   **Efficient grid integration** through existing electrical infrastructure
 
 Solar energy harvested here can directly power charging points located at higher levels of the car park, reducing dependency on the main grid and promoting decentralized energy generation.
 

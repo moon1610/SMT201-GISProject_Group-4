@@ -48,7 +48,7 @@
         "\n",
         "2.  Run the following code to condense the number of EV charging stations found in one location:\\\n"
       ],
-      "id": "745c3bba"
+      "id": "fa2cc5ba"
     },
     {
       "cell_type": "code",
@@ -70,7 +70,7 @@
         "\n",
         "print(result_df)"
       ],
-      "id": "ba322b3d",
+      "id": "3a2d1ab2",
       "execution_count": null,
       "outputs": []
     },
@@ -94,7 +94,7 @@
         "4.  Click on Create Plot. The following should be the resulting graph:\\\n",
         "    ![](images/clipboard-340631990.png)"
       ],
-      "id": "8d997bb2"
+      "id": "af787f37"
     }
   ],
   "metadata": {
