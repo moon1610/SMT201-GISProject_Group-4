@@ -3,7 +3,7 @@ title: "Results"
 format: html
 ---
 
-# Analysis Results
+# Analysis of Results
 
 ### Spatial distribution of EV Charging Points
 
