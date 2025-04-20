@@ -37,23 +37,7 @@ format: html
 
 1.  Open the EV Charging Stations dataset downloaded from LTADataMall.
 
-2.  Run the following code to condense the number of EV charging stations found in one location:\
-
-    ```{python}
-    # install pandas if not installed yet.
-    import pandas as pd
-
-    df = pd.read_excel("[file destination]/Electric_Vehicle_Charging_Points_Feb 2025.xlsx")
-
-    grouped = df.groupby(['Longitude', 'Latitude'], as_index=False).first()
-    counts = df.groupby(['Longitude', 'Latitude']).size().reset_index(name='Charger Count')
-
-    result_df = pd.merge(grouped, counts, on=['Longitude', 'Latitude'])
-
-    result_df.to_csv("[file destination]/ev_chargers_count.csv", index=False)
-
-    print(result_df)
-    ```
+2.  Run the following code to condense the number of EV charging stations found in one location
 
 The output would be a CSV file, which you can now run as a delimited text layer on QGIS for further analysis. Open QGIS to proceed.
 
