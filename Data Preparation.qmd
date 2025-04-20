@@ -39,6 +39,8 @@ format: html
 
 2.  Run the following code to condense the number of EV charging stations found in one location
 
+    ![](images/clipboard-3416611228.png)
+
 The output would be a CSV file, which you can now run as a delimited text layer on QGIS for further analysis. Open QGIS to proceed.
 
 3.  Create a new project. Click on Layer \> Add Layer \> Add Delimited Text Layer.
