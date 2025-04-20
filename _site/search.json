@@ -172,5 +172,26 @@
       "Methodology",
       "Research"
     ]
+  },
+  {
+    "objectID": "Lessons.html",
+    "href": "Lessons.html",
+    "title": "Lessons",
+    "section": "",
+    "text": "Through this GIS-based exploration of solar potential for EV charging integration in Singapore, our team gained valuable insights across spatial analysis, energy systems, and urban planning realities:\n\nWe learnt how to leverage multi-criteria GIS techniques to overlay solar irradiance, terrain suitability, and infrastructure distribution for location-based decision-making.\nThe project highlighted the gap between theoretical suitability and real-world implementation, especially in space-scarce urban contexts.\nUnderstanding Singapore’s regulatory and infrastructural limitations shaped our appreciation for practical feasibility, not just technical potential.\nWe gained hands-on experience with tools like QGIS, raster calculators, zonal statistics, and spatial joins, which helped us apply classroom concepts to a real-world use case."
+  },
+  {
+    "objectID": "Lessons.html#lessons-learnt",
+    "href": "Lessons.html#lessons-learnt",
+    "title": "Lessons",
+    "section": "",
+    "text": "Through this GIS-based exploration of solar potential for EV charging integration in Singapore, our team gained valuable insights across spatial analysis, energy systems, and urban planning realities:\n\nWe learnt how to leverage multi-criteria GIS techniques to overlay solar irradiance, terrain suitability, and infrastructure distribution for location-based decision-making.\nThe project highlighted the gap between theoretical suitability and real-world implementation, especially in space-scarce urban contexts.\nUnderstanding Singapore’s regulatory and infrastructural limitations shaped our appreciation for practical feasibility, not just technical potential.\nWe gained hands-on experience with tools like QGIS, raster calculators, zonal statistics, and spatial joins, which helped us apply classroom concepts to a real-world use case."
+  },
+  {
+    "objectID": "Lessons.html#limitations-real-world-challenges",
+    "href": "Lessons.html#limitations-real-world-challenges",
+    "title": "Lessons",
+    "section": "Limitations & Real-World Challenges",
+    "text": "Limitations & Real-World Challenges\nDespite the value of spatial analysis, several real-world constraints must be acknowledged:\n\nTechnical & Transparency Barriers\n\nLack of Transparency: EV station operators rarely disclose whether sites are grid-tied or off-grid.\n\n\n\nDynamic Landscape: With over 1,129 new charging points added in the last six months (as of Jan 2025), data becomes outdated quickly, especially for experimental or private off-grid setups\n\n\n\nUrban Infrastructure Constraints\n\nSpace Scarcity: Rooftop or open-air installations are limited by Singapore’s land constraints and competing usage priorities (e.g., parking).\n\n\n\nHigh Upfront Costs: A 50 kWp solar canopy system can cost $100,000–$200,000 SGD, factoring in structure, labor, and urban integration.\n\n\n\nEnergy Mismatch: Solar output peaks in the daytime, while EV charging may occur at night—requiring grid backup or battery storage (~$25,000–$50,000 SGD per 50 kWh).\n\n\n\nRegulatory & Structural Considerations\n\nApproval Complexity: Deployments require regulatory compliance across LTA, EMA, and HDB, including standards like TR25 and grid interconnection.\nStructural Load & Weather: Solar infrastructure must be engineered to withstand heavy rainfall and wind, increasing design and material costs."
   }
 ]

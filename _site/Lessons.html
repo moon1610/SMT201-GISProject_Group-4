@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Our Team – SMT201-GISProject</title>
+<title>Lessons – SMT201-GISProject</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -105,13 +105,13 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Poster</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./Lessons.html"> 
+    <a class="nav-link active" href="./Lessons.html" aria-current="page"> 
 <span class="menu-text">Lessons</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">Team</span></a>
   </li>  
 </ul>
@@ -125,20 +125,32 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#lessons-learnt" id="toc-lessons-learnt" class="nav-link active" data-scroll-target="#lessons-learnt">Lessons Learnt</a></li>
+  <li><a href="#limitations-real-world-challenges" id="toc-limitations-real-world-challenges" class="nav-link" data-scroll-target="#limitations-real-world-challenges">Limitations &amp; Real-World Challenges</a>
+  <ul class="collapse">
+  <li><a href="#technical-transparency-barriers" id="toc-technical-transparency-barriers" class="nav-link" data-scroll-target="#technical-transparency-barriers">Technical &amp; Transparency Barriers</a></li>
+  <li><a href="#urban-infrastructure-constraints" id="toc-urban-infrastructure-constraints" class="nav-link" data-scroll-target="#urban-infrastructure-constraints">Urban Infrastructure Constraints</a></li>
+  <li><a href="#regulatory-structural-considerations" id="toc-regulatory-structural-considerations" class="nav-link" data-scroll-target="#regulatory-structural-considerations">Regulatory &amp; Structural Considerations</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Our Team</h1>
+<h1 class="title">Lessons</h1>
 </div>
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -150,11 +162,53 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><br>
-<br>
-<img src="images/clipboard-1817683407.png" class="img-fluid"></p>
+<section id="lessons-learnt" class="level2">
+<h2 class="anchored" data-anchor-id="lessons-learnt">Lessons Learnt</h2>
+<p>Through this GIS-based exploration of solar potential for EV charging integration in Singapore, our team gained valuable insights across spatial analysis, energy systems, and urban planning realities:</p>
+<ul>
+<li><p>We learnt how to leverage <strong>multi-criteria GIS techniques</strong> to overlay solar irradiance, terrain suitability, and infrastructure distribution for location-based decision-making.</p></li>
+<li><p>The project highlighted the <strong>gap between theoretical suitability and real-world implementation</strong>, especially in space-scarce urban contexts.</p></li>
+<li><p>Understanding Singapore’s regulatory and infrastructural limitations shaped our appreciation for <strong>practical feasibility</strong>, not just technical potential.</p></li>
+<li><p>We gained hands-on experience with tools like <strong>QGIS, raster calculators, zonal statistics, and spatial joins</strong>, which helped us apply classroom concepts to a real-world use case.</p></li>
+</ul>
+</section>
+<section id="limitations-real-world-challenges" class="level2">
+<h2 class="anchored" data-anchor-id="limitations-real-world-challenges">Limitations &amp; Real-World Challenges</h2>
+<p>Despite the value of spatial analysis, several real-world constraints must be acknowledged:</p>
+<section id="technical-transparency-barriers" class="level3">
+<h3 class="anchored" data-anchor-id="technical-transparency-barriers">Technical &amp; Transparency Barriers</h3>
+<ul>
+<li><strong>Lack of Transparency</strong>: EV station operators rarely disclose whether sites are grid-tied or off-grid.</li>
+</ul>
+<!-- -->
+<ul>
+<li><strong>Dynamic Landscape</strong>: With over <strong>1,129 new charging points</strong> added in the last six months (as of Jan 2025), data becomes outdated quickly, especially for experimental or private off-grid setups</li>
+</ul>
+</section>
+<section id="urban-infrastructure-constraints" class="level3">
+<h3 class="anchored" data-anchor-id="urban-infrastructure-constraints">Urban Infrastructure Constraints</h3>
+<ul>
+<li><strong>Space Scarcity</strong>: Rooftop or open-air installations are limited by Singapore’s land constraints and competing usage priorities (e.g., parking).</li>
+</ul>
+<!-- -->
+<ul>
+<li><strong>High Upfront Costs</strong>: A 50 kWp solar canopy system can cost <strong>$100,000–$200,000 SGD</strong>, factoring in structure, labor, and urban integration.</li>
+</ul>
+<!-- -->
+<ul>
+<li><strong>Energy Mismatch</strong>: Solar output peaks in the daytime, while EV charging may occur at night—requiring grid backup or <strong>battery storage</strong> (~$25,000–$50,000 SGD per 50 kWh).</li>
+</ul>
+</section>
+<section id="regulatory-structural-considerations" class="level3">
+<h3 class="anchored" data-anchor-id="regulatory-structural-considerations">Regulatory &amp; Structural Considerations</h3>
+<ul>
+<li><p><strong>Approval Complexity</strong>: Deployments require regulatory compliance across <strong>LTA, EMA, and HDB</strong>, including standards like <strong>TR25</strong> and grid interconnection.</p></li>
+<li><p><strong>Structural Load &amp; Weather</strong>: Solar infrastructure must be engineered to withstand <strong>heavy rainfall and wind</strong>, increasing design and material costs.</p></li>
+</ul>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
