@@ -235,24 +235,26 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="data-preparation">2.1 Data Preparation</h3>
 <ol type="1">
 <li><p>Open the EV Charging Stations dataset downloaded from LTADataMall.</p></li>
-<li><p>Run the following code to condense the number of EV charging stations found in one location</p></li>
+<li><p>Run the following code to condense the number of EV charging stations found in one location</p>
+<p><img src="images/clipboard-3416611228.png" class="img-fluid"></p></li>
 </ol>
 <p>The output would be a CSV file, which you can now run as a delimited text layer on QGIS for further analysis. Open QGIS to proceed.</p>
 <ol start="3" type="1">
-<li>Create a new project. Click on Layer &gt; Add Layer &gt; Add Delimited Text Layer.</li>
-<li>Input the newly created ev_chargers_count.csv under file name, and name the layer as ev_chargers_count.</li>
-<li>Under Geometry Definition, ensure that the X and Y coordinates are Longitude and Latitude respectively, and the geometry CRS is set to SVY21.</li>
+<li><p>Create a new project. Click on Layer &gt; Add Layer &gt; Add Delimited Text Layer.</p></li>
+<li><p>Input the newly created ev_chargers_count.csv under file name, and name the layer as ev_chargers_count.</p></li>
+<li><p>Under Geometry Definition, ensure that the X and Y coordinates are Longitude and Latitude respectively, and the geometry CRS is set to SVY21.</p></li>
 </ol>
 </section>
 <section id="analyzing-charger-types" class="level3">
 <h3 class="anchored" data-anchor-id="analyzing-charger-types">2.2 Analyzing charger types</h3>
 <p>Understanding the current distribution of charger types allows us to understand the prevalence of EVs, and the amount of energy required to power these EV stations. We will be using the DataPlotly plugin to derive this graph.</p>
 <ol type="1">
-<li>Open the DataPlotly plugin.</li>
-<li>Set plot type to Histogram</li>
-<li>Set X field to <strong>Type of Connector</strong></li>
-<li>Click on Create Plot. The following should be the resulting graph:<br>
-<img src="images/clipboard-340631990.png" class="img-fluid"></li>
+<li><p>Open the DataPlotly plugin.</p></li>
+<li><p>Set plot type to Histogram</p></li>
+<li><p>Set X field to <strong>Type of Connector</strong></p></li>
+<li><p>Click on Create Plot. The following should be the resulting graph:<br>
+<img src="images/clipboard-340631990.png" class="img-fluid"></p>
+<p>CCS2 chargers use a different charging system of DC circuits as compared to Type 2 chargers of AC circuits, and CCS2 chargers would require more solar power to run.</p></li>
 </ol>
 
 
