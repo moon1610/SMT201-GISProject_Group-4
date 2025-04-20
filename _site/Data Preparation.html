@@ -182,6 +182,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#data-preparation" id="toc-data-preparation" class="nav-link" data-scroll-target="#data-preparation">2.1 Data Preparation</a></li>
   <li><a href="#analyzing-charger-types" id="toc-analyzing-charger-types" class="nav-link" data-scroll-target="#analyzing-charger-types">2.2 Analyzing charger types</a></li>
   </ul></li>
+  <li><a href="#slope-classification-of-singapore-based-on-30m-srtm-data" id="toc-slope-classification-of-singapore-based-on-30m-srtm-data" class="nav-link" data-scroll-target="#slope-classification-of-singapore-based-on-30m-srtm-data">3. Slope Classification of Singapore Based on 30m SRTM Data</a></li>
+  <li><a href="#global-horizontal-irradiance-ghi-across-singapore" id="toc-global-horizontal-irradiance-ghi-across-singapore" class="nav-link" data-scroll-target="#global-horizontal-irradiance-ghi-across-singapore">4. Global Horizontal Irradiance (GHI) Across Singapore</a></li>
+  <li><a href="#identifying-optimal-ev-stationsbased-on-ghi-slope" id="toc-identifying-optimal-ev-stationsbased-on-ghi-slope" class="nav-link" data-scroll-target="#identifying-optimal-ev-stationsbased-on-ghi-slope">5. Identifying Optimal EV Stations(Based on GHI + Slope)</a></li>
   </ul>
 </nav>
     </div>
@@ -261,9 +264,81 @@ ul.task-list li input[type="checkbox"] {
 <img src="images/clipboard-340631990.png" class="img-fluid"></p>
 <p>CCS2 chargers use a different charging system of DC circuits as compared to Type 2 chargers of AC circuits, and CCS2 chargers would require more solar power to run.</p></li>
 </ol>
-
-
 </section>
+</section>
+<section id="slope-classification-of-singapore-based-on-30m-srtm-data" class="level2">
+<h2 class="anchored" data-anchor-id="slope-classification-of-singapore-based-on-30m-srtm-data">3. Slope Classification of Singapore Based on 30m SRTM Data</h2>
+<p><strong>Objective:</strong> Categorize terrain steepness across Singapore to identify suitable zones for solar EV charging infrastructure.</p>
+<p><strong>Steps:</strong></p>
+<ol type="1">
+<li><p>Load the <strong>30m SRTM DEM</strong> into QGIS (e.g., from USGS Earth Explorer).</p></li>
+<li><p>Go to <strong>Processing</strong> → <strong>Toolbox</strong> → Search for <strong>“Slope”</strong> under Raster terrain analysis.</p></li>
+<li><p>Set the <strong>input layer</strong> as the DEM and <strong>output units</strong> to degrees → Run.</p></li>
+<li><p>Once the slope raster is created, go to <strong>Raster</strong> → <strong>Raster Calculator</strong> to reclassify:</p></li>
+</ol>
+<pre><code>-    Use conditions to assign values to slope ranges:</code></pre>
+<ol start="5" type="1">
+<li><p>Assign labels (Gentle, Moderate, etc.) to the values using <strong>Layer Properties → Symbology</strong> → Paletted/Unique values.</p></li>
+<li><p>Add <strong>basemap</strong> via OpenStreetMap under XYZ Tiles.</p></li>
+</ol>
+</section>
+<section id="global-horizontal-irradiance-ghi-across-singapore" class="level2">
+<h2 class="anchored" data-anchor-id="global-horizontal-irradiance-ghi-across-singapore">4. Global Horizontal Irradiance (GHI) Across Singapore</h2>
+<p><strong>Objective:</strong> Visualize solar potential (kWh/m²/year) to determine energy yield suitability for EV charging.</p>
+<p><strong>Steps:</strong></p>
+<ol type="1">
+<li><p>Load the <strong>GHI raster</strong> data (e.g., from Global Solar Atlas or PVGIS) into QGIS.</p></li>
+<li><p>Clip the raster to Singapore using:</p></li>
+</ol>
+<pre><code>-    **Raster** → **Extraction** → **Clip Raster by Mask Layer**
+
+-    Input layer = GHI raster, Mask layer = `MP19`</code></pre>
+<ol start="3" type="1">
+<li>Go to <strong>Layer Properties → Symbology</strong></li>
+</ol>
+<pre><code>-    Choose **Singleband pseudocolor**
+
+-    Set min/max values appropriately (e.g., 1596 to 1692)
+
+-    Choose a warm color ramp (e.g., **Orange → Red**)</code></pre>
+<ol start="4" type="1">
+<li><p>Overlay <strong>MP19SZ</strong> (planning subzones) for visual context.</p></li>
+<li><p>Add labels and legend via <strong>Print Layout</strong>.</p></li>
+</ol>
+</section>
+<section id="identifying-optimal-ev-stationsbased-on-ghi-slope" class="level2">
+<h2 class="anchored" data-anchor-id="identifying-optimal-ev-stationsbased-on-ghi-slope">5. Identifying Optimal EV Stations(Based on GHI + Slope)</h2>
+<p><strong>Objective:</strong> Filter EV charging stations in <strong>areas with high solar irradiance</strong> and <strong>gentle terrain</strong> to shortlist for solar integration.</p>
+<p><strong>Steps:</strong></p>
+<ol type="1">
+<li><p>Use the <strong>GHI raster (clipped)</strong> and <strong>reclassified slope raster</strong> as base layers.</p></li>
+<li><p>Go to <strong>Processing → Raster Calculator</strong> and create a <strong>suitability mask</strong>:</p></li>
+</ol>
+<pre><code>("GHI\@1" \&gt;= 1650) AND ("slope_reclass\@1" \&lt;= 2)</code></pre>
+<ol start="3" type="1">
+<li><p>Convert this raster mask to <strong>polygon</strong> using:</p>
+<ul>
+<li><strong>Raster</strong> → <strong>Conversion</strong> → <strong>Polygonize (Raster to Vector)</strong></li>
+</ul></li>
+<li><p>Use <strong>Join Attributes by Location</strong> to select EV points that <strong>intersect the suitable polygon area</strong>.</p>
+<ul>
+<li>Input: <code>EV_Points</code>, By comparing to: suitability polygon</li>
+</ul></li>
+<li><p>Filter those selected features into a new layer:</p>
+<ul>
+<li><strong>Right-click → Export → Save Selected Features As</strong> → <code>Potential_Solar_EV_Stations</code></li>
+</ul></li>
+</ol>
+<ul>
+<li>Style this layer:</li>
+</ul>
+<pre><code>-    Use **red car icons** or **simple red circles**</code></pre>
+<!-- -->
+<ul>
+<li>Finalize the visual using <strong>Print Layout</strong>, include legend and scale bar.</li>
+</ul>
+
+
 </section>
 
 </main> <!-- /main -->

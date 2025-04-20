@@ -69,3 +69,81 @@ Understanding the current distribution of charger types allows us to understand 
     ![](images/clipboard-340631990.png)
 
     CCS2 chargers use a different charging system of DC circuits as compared to Type 2 chargers of AC circuits, and CCS2 chargers would require more solar power to run.
+
+## 3. Slope Classification of Singapore Based on 30m SRTM Data
+
+**Objective:** Categorize terrain steepness across Singapore to identify suitable zones for solar EV charging infrastructure.
+
+**Steps:**
+
+1.   Load the **30m SRTM DEM** into QGIS (e.g., from USGS Earth Explorer).
+
+2.   Go to **Processing** → **Toolbox** → Search for **“Slope”** under Raster terrain analysis.
+
+3.   Set the **input layer** as the DEM and **output units** to degrees → Run.
+
+4.   Once the slope raster is created, go to **Raster** → **Raster Calculator** to reclassify:
+
+    -    Use conditions to assign values to slope ranges:
+
+5.  Assign labels (Gentle, Moderate, etc.) to the values using **Layer Properties → Symbology** → Paletted/Unique values.
+
+6.  Add **basemap** via OpenStreetMap under XYZ Tiles.
+
+## 4. Global Horizontal Irradiance (GHI) Across Singapore
+
+**Objective:** Visualize solar potential (kWh/m²/year) to determine energy yield suitability for EV charging.
+
+**Steps:**
+
+1.   Load the **GHI raster** data (e.g., from Global Solar Atlas or PVGIS) into QGIS.
+
+2.   Clip the raster to Singapore using:
+
+    -    **Raster** → **Extraction** → **Clip Raster by Mask Layer**
+
+    -    Input layer = GHI raster, Mask layer = `MP19`
+
+3.   Go to **Layer Properties → Symbology**
+
+    -    Choose **Singleband pseudocolor**
+
+    -    Set min/max values appropriately (e.g., 1596 to 1692)
+
+    -    Choose a warm color ramp (e.g., **Orange → Red**)
+
+4.   Overlay **MP19SZ** (planning subzones) for visual context.
+
+5.   Add labels and legend via **Print Layout**.
+
+## 5. Identifying Optimal EV Stations(Based on GHI + Slope)
+
+**Objective:** Filter EV charging stations in **areas with high solar irradiance** and **gentle terrain** to shortlist for solar integration.
+
+**Steps:**
+
+1.   Use the **GHI raster (clipped)** and **reclassified slope raster** as base layers.
+
+2.   Go to **Processing → Raster Calculator** and create a **suitability mask**:
+
+    ("GHI\@1" \>= 1650) AND ("slope_reclass\@1" \<= 2)
+
+3.  Convert this raster mask to **polygon** using:
+
+    -    **Raster** → **Conversion** → **Polygonize (Raster to Vector)**
+
+4.  Use **Join Attributes by Location** to select EV points that **intersect the suitable polygon area**.
+
+    -   Input: `EV_Points`, By comparing to: suitability polygon
+
+5.  Filter those selected features into a new layer:
+
+    -    **Right-click → Export → Save Selected Features As** → `Potential_Solar_EV_Stations`
+
+-    Style this layer:
+
+    -    Use **red car icons** or **simple red circles**
+
+<!-- -->
+
+-    Finalize the visual using **Print Layout**, include legend and scale bar.

@@ -139,5 +139,38 @@
       "Methodology",
       "Research"
     ]
+  },
+  {
+    "objectID": "Data Preparation.html#slope-classification-of-singapore-based-on-30m-srtm-data",
+    "href": "Data Preparation.html#slope-classification-of-singapore-based-on-30m-srtm-data",
+    "title": "Data Preparation",
+    "section": "3. Slope Classification of Singapore Based on 30m SRTM Data",
+    "text": "3. Slope Classification of Singapore Based on 30m SRTM Data\nObjective: Categorize terrain steepness across Singapore to identify suitable zones for solar EV charging infrastructure.\nSteps:\n\nLoad the 30m SRTM DEM into QGIS (e.g., from USGS Earth Explorer).\nGo to Processing → Toolbox → Search for “Slope” under Raster terrain analysis.\nSet the input layer as the DEM and output units to degrees → Run.\nOnce the slope raster is created, go to Raster → Raster Calculator to reclassify:\n\n-    Use conditions to assign values to slope ranges:\n\nAssign labels (Gentle, Moderate, etc.) to the values using Layer Properties → Symbology → Paletted/Unique values.\nAdd basemap via OpenStreetMap under XYZ Tiles.",
+    "crumbs": [
+      "Methodology",
+      "Data Preparation"
+    ]
+  },
+  {
+    "objectID": "Data Preparation.html#global-horizontal-irradiance-ghi-across-singapore",
+    "href": "Data Preparation.html#global-horizontal-irradiance-ghi-across-singapore",
+    "title": "Data Preparation",
+    "section": "4. Global Horizontal Irradiance (GHI) Across Singapore",
+    "text": "4. Global Horizontal Irradiance (GHI) Across Singapore\nObjective: Visualize solar potential (kWh/m²/year) to determine energy yield suitability for EV charging.\nSteps:\n\nLoad the GHI raster data (e.g., from Global Solar Atlas or PVGIS) into QGIS.\nClip the raster to Singapore using:\n\n-    **Raster** → **Extraction** → **Clip Raster by Mask Layer**\n\n-    Input layer = GHI raster, Mask layer = `MP19`\n\nGo to Layer Properties → Symbology\n\n-    Choose **Singleband pseudocolor**\n\n-    Set min/max values appropriately (e.g., 1596 to 1692)\n\n-    Choose a warm color ramp (e.g., **Orange → Red**)\n\nOverlay MP19SZ (planning subzones) for visual context.\nAdd labels and legend via Print Layout.",
+    "crumbs": [
+      "Methodology",
+      "Data Preparation"
+    ]
+  },
+  {
+    "objectID": "Data Preparation.html#identifying-optimal-ev-stationsbased-on-ghi-slope",
+    "href": "Data Preparation.html#identifying-optimal-ev-stationsbased-on-ghi-slope",
+    "title": "Data Preparation",
+    "section": "5. Identifying Optimal EV Stations(Based on GHI + Slope)",
+    "text": "5. Identifying Optimal EV Stations(Based on GHI + Slope)\nObjective: Filter EV charging stations in areas with high solar irradiance and gentle terrain to shortlist for solar integration.\nSteps:\n\nUse the GHI raster (clipped) and reclassified slope raster as base layers.\nGo to Processing → Raster Calculator and create a suitability mask:\n\n(\"GHI\\@1\" \\&gt;= 1650) AND (\"slope_reclass\\@1\" \\&lt;= 2)\n\nConvert this raster mask to polygon using:\n\nRaster → Conversion → Polygonize (Raster to Vector)\n\nUse Join Attributes by Location to select EV points that intersect the suitable polygon area.\n\nInput: EV_Points, By comparing to: suitability polygon\n\nFilter those selected features into a new layer:\n\nRight-click → Export → Save Selected Features As → Potential_Solar_EV_Stations\n\n\n\nStyle this layer:\n\n-    Use **red car icons** or **simple red circles**\n\n\nFinalize the visual using Print Layout, include legend and scale bar.",
+    "crumbs": [
+      "Methodology",
+      "Data Preparation"
+    ]
   }
 ]
