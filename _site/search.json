@@ -10,35 +10,50 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Overview",
+    "objectID": "Lessons.html",
+    "href": "Lessons.html",
+    "title": "Lessons",
     "section": "",
-    "text": "Singapore’s energy grid, heavily reliant on natural gas, faces increasing pressure from rising electric vehicle (EV) adoption. With limited land, there is a need to identify optimal sites for solar-powered EV charging stations that integrate solar energy harvesting and storage to reduce dependence on the grid and support Green Plan 2030 goals.\n\n\n\nWe propose a GIS-based multi-criteria analysis to assess land suitability for solar-powered EV charging stations. By analysing factors like solar potential, land availability, and EV demand, we aim to identify ideal locations for these stations. This solution aims to support Singapore’s target of 60,000 charging points by 2030 and leverages solar storage technologies (e.g. lithium-ion batteries) to ensure efficient operation, contributing to sustainable mobility and decarbonisation under the Green Plan 2030."
+    "text": "Through this GIS-based exploration of solar potential for EV charging integration in Singapore, our team gained valuable insights across spatial analysis, energy systems, and urban planning realities:"
   },
   {
-    "objectID": "index.html#introduction",
-    "href": "index.html#introduction",
-    "title": "Overview",
-    "section": "",
-    "text": "Singapore’s energy grid, heavily reliant on natural gas, faces increasing pressure from rising electric vehicle (EV) adoption. With limited land, there is a need to identify optimal sites for solar-powered EV charging stations that integrate solar energy harvesting and storage to reduce dependence on the grid and support Green Plan 2030 goals.\n\n\n\nWe propose a GIS-based multi-criteria analysis to assess land suitability for solar-powered EV charging stations. By analysing factors like solar potential, land availability, and EV demand, we aim to identify ideal locations for these stations. This solution aims to support Singapore’s target of 60,000 charging points by 2030 and leverages solar storage technologies (e.g. lithium-ion batteries) to ensure efficient operation, contributing to sustainable mobility and decarbonisation under the Green Plan 2030."
+    "objectID": "Lessons.html#limitations-real-world-challenges",
+    "href": "Lessons.html#limitations-real-world-challenges",
+    "title": "Lessons",
+    "section": "Limitations & Real-World Challenges",
+    "text": "Limitations & Real-World Challenges\nDespite the value of spatial analysis, several real-world constraints must be acknowledged:\n\nTechnical & Transparency Barriers\n\nLack of Transparency: EV station operators rarely disclose whether sites are grid-tied or off-grid.\n\n\n\nDynamic Landscape: With over 1,129 new charging points added in the last six months (as of Jan 2025), data becomes outdated quickly, especially for experimental or private off-grid setups\n\n\n\nUrban Infrastructure Constraints\n\nSpace Scarcity: Rooftop or open-air installations are limited by Singapore’s land constraints and competing usage priorities (e.g., parking).\n\n\n\nHigh Upfront Costs: A 50 kWp solar canopy system can cost $100,000–$200,000 SGD, factoring in structure, labor, and urban integration.\n\n\n\nEnergy Mismatch: Solar output peaks in the daytime, while EV charging may occur at night—requiring grid backup or battery storage (~$25,000–$50,000 SGD per 50 kWh).\n\n\n\nRegulatory & Structural Considerations\n\nApproval Complexity: Deployments require regulatory compliance across LTA, EMA, and HDB, including standards like TR25 and grid interconnection.\nStructural Load & Weather: Solar infrastructure must be engineered to withstand heavy rainfall and wind, increasing design and material costs."
   },
   {
-    "objectID": "index.html#project-schedule-and-workload",
-    "href": "index.html#project-schedule-and-workload",
-    "title": "Overview",
-    "section": "Project Schedule and Workload",
-    "text": "Project Schedule and Workload"
-  },
-  {
-    "objectID": "Data Source.html",
-    "href": "Data Source.html",
-    "title": "Data Source",
+    "objectID": "Future works.html",
+    "href": "Future works.html",
+    "title": "Future works",
     "section": "",
-    "text": "Data\nDescription\n\n\n\n\nMasterPlan2019\nVector layer containing Singapore’s urban planning boundaries and land use zones. This was used to contextualize solar potential across different planning areas and identify zones suitable for EV charging station deployment.\n\n\nEV Charging Stations\nPoint dataset representing existing EV charging station locations across Singapore. This layer supported demand analysis and spatial proximity evaluations for potential solar-powered station expansions.\n\n\nEast Asia and Pacific Solar GIS Data\nRaster dataset from the Global Solar Atlas containing Global Horizontal Irradiance (GHI) values. GHI was used to assess solar energy potential by calculating average irradiance across Singapore’s planning areas, guiding site suitability for solar infrastructure deployment.\n\n\nHDB Carpark Information\nInformation about HDB Carparks such as operating hours, location (in SYV21), type of parking system etc.\n\n\nDEM\nShuttle Radar Topography Mission (SRTM) 30-meter digital elevation model data from the USGS Earth Explorer.\n\n\n\nAssuming that the root directory of this project is called ”Project”:\n\nCreate a subfolder called “data”\nInside “data” folder\n\nPlace the downloaded files into the folder \n\nExtract the files in the zipped files into the respective subfolders",
+    "text": "Looking ahead, this project lays the groundwork for a nationwide network of smart, solar-powered EV charging stations seamlessly integrated into Singapore’s urban fabric. Real-time traffic data, predictive EV adoption trends, and energy storage capabilities can be incorporated to optimize grid performance. We can further expand into evaluating the suitability of existing car parks across Singapore by installing solar panels on surface-level car parks or on the rooftops of multi-storey car parks. These panels can convert solar energy into electricity to charge EVs parked on upper levels, maximizing land use and energy efficiency. Beyond charging infrastructure, this vision extends to creating self-sustaining energy hubs that not only power vehicles, but also feed clean energy back into the city—driving Singapore toward a smarter, greener future.",
     "crumbs": [
-      "Methodology",
-      "Data Source"
+      "Results and Analysis",
+      "Future works"
+    ]
+  },
+  {
+    "objectID": "Future works.html#more-recommendations-solar-panel-installation-in-car-parks",
+    "href": "Future works.html#more-recommendations-solar-panel-installation-in-car-parks",
+    "title": "Future works",
+    "section": "More Recommendations: Solar Panel Installation in Car Parks",
+    "text": "More Recommendations: Solar Panel Installation in Car Parks\nTo support sustainable urban mobility and optimize land use, we recommend installing solar panels on the rooftops of HDB car parks—particularly in areas identified with high solar irradiance (see previous section). This strategy enables dual-purpose use of urban infrastructure: generating renewable energy while supporting electric vehicle (EV) charging needs.\n\nTarget Car Parks\n\n\n\n\n\n\n\n\n\n\n\n\n\nWe have excluded basement and mechanised car parks from this analysis due to structural limitations. The filtered results highlight multi-storey and open-air car parks as ideal candidates for rooftop solar installation.\n\n\nWhy Car Parks?\n\nUnshaded rooftop space with direct sun exposure\nProximity to EV demand zones (residential areas)\nFlat surface area ideal for panel mounting\nEfficient grid integration through existing electrical infrastructure\n\nSolar energy harvested here can directly power charging points located at higher levels of the car park, reducing dependency on the main grid and promoting decentralized energy generation.",
+    "crumbs": [
+      "Results and Analysis",
+      "Future works"
+    ]
+  },
+  {
+    "objectID": "Future works.html#estimated-costs-and-dimensions",
+    "href": "Future works.html#estimated-costs-and-dimensions",
+    "title": "Future works",
+    "section": "Estimated Costs and Dimensions",
+    "text": "Estimated Costs and Dimensions\n\n\n\n\n\n\n\nSpecification\nDetails\n\n\n\n\nTypical Panel Size\n1.7m x 1.0m (approx. 1.7m² per panel)\n\n\nPower Output per Panel\n~500 Wp (Watt-peak)\n\n\nAverage Cost per Panel\nSGD $300–$400 (before subsidies)\n\n\nInstallation & Inverter Cost\nSGD $1,500–$2,500 per system setup (variable)\n\n\nArea Needed for 1kWp Output\n~5–6 m²\n\n\nAverage Rooftop Size (MSCP)\n~1,000–1,500 m² (depending on location)\n\n\nPotential System Size\n150–250 kWp per car park",
+    "crumbs": [
+      "Results and Analysis",
+      "Future works"
     ]
   },
   {
@@ -108,37 +123,36 @@
     ]
   },
   {
-    "objectID": "Future works.html",
-    "href": "Future works.html",
-    "title": "Future works",
+    "objectID": "Data Source.html",
+    "href": "Data Source.html",
+    "title": "Data Source",
     "section": "",
-    "text": "Looking ahead, this project lays the groundwork for a nationwide network of smart, solar-powered EV charging stations seamlessly integrated into Singapore’s urban fabric. Real-time traffic data, predictive EV adoption trends, and energy storage capabilities can be incorporated to optimize grid performance. We can further expand into evaluating the suitability of existing car parks across Singapore by installing solar panels on surface-level car parks or on the rooftops of multi-storey car parks. These panels can convert solar energy into electricity to charge EVs parked on upper levels, maximizing land use and energy efficiency. Beyond charging infrastructure, this vision extends to creating self-sustaining energy hubs that not only power vehicles, but also feed clean energy back into the city—driving Singapore toward a smarter, greener future.",
+    "text": "Data\nDescription\n\n\n\n\nMasterPlan2019\nVector layer containing Singapore’s urban planning boundaries and land use zones. This was used to contextualize solar potential across different planning areas and identify zones suitable for EV charging station deployment.\n\n\nEV Charging Stations\nPoint dataset representing existing EV charging station locations across Singapore. This layer supported demand analysis and spatial proximity evaluations for potential solar-powered station expansions.\n\n\nEast Asia and Pacific Solar GIS Data\nRaster dataset from the Global Solar Atlas containing Global Horizontal Irradiance (GHI) values. GHI was used to assess solar energy potential by calculating average irradiance across Singapore’s planning areas, guiding site suitability for solar infrastructure deployment.\n\n\nHDB Carpark Information\nInformation about HDB Carparks such as operating hours, location (in SYV21), type of parking system etc.\n\n\nDEM\nShuttle Radar Topography Mission (SRTM) 30-meter digital elevation model data from the USGS Earth Explorer.\n\n\n\nAssuming that the root directory of this project is called ”Project”:\n\nCreate a subfolder called “data”\nInside “data” folder\n\nPlace the downloaded files into the folder \n\nExtract the files in the zipped files into the respective subfolders",
     "crumbs": [
-      "Results and Analysis",
-      "Future works"
+      "Methodology",
+      "Data Source"
     ]
   },
   {
-    "objectID": "Future works.html#more-recommendations-solar-panel-installation-in-car-parks",
-    "href": "Future works.html#more-recommendations-solar-panel-installation-in-car-parks",
-    "title": "Future works",
-    "section": "More Recommendations: Solar Panel Installation in Car Parks",
-    "text": "More Recommendations: Solar Panel Installation in Car Parks\nTo support sustainable urban mobility and optimize land use, we recommend installing solar panels on the rooftops of HDB car parks—particularly in areas identified with high solar irradiance (see previous section). This strategy enables dual-purpose use of urban infrastructure: generating renewable energy while supporting electric vehicle (EV) charging needs.\n\nTarget Car Parks\n\n\n\n\n\n\n\n\n\n\n\n\n\nWe have excluded basement and mechanised car parks from this analysis due to structural limitations. The filtered results highlight multi-storey and open-air car parks as ideal candidates for rooftop solar installation.\n\n\nWhy Car Parks?\n\nUnshaded rooftop space with direct sun exposure\nProximity to EV demand zones (residential areas)\nFlat surface area ideal for panel mounting\nEfficient grid integration through existing electrical infrastructure\n\nSolar energy harvested here can directly power charging points located at higher levels of the car park, reducing dependency on the main grid and promoting decentralized energy generation.",
-    "crumbs": [
-      "Results and Analysis",
-      "Future works"
-    ]
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Overview",
+    "section": "",
+    "text": "Singapore’s energy grid, heavily reliant on natural gas, faces increasing pressure from rising electric vehicle (EV) adoption. With limited land, there is a need to identify optimal sites for solar-powered EV charging stations that integrate solar energy harvesting and storage to reduce dependence on the grid and support Green Plan 2030 goals.\n\n\n\nWe propose a GIS-based multi-criteria analysis to assess land suitability for solar-powered EV charging stations. By analysing factors like solar potential, land availability, and EV demand, we aim to identify ideal locations for these stations. This solution aims to support Singapore’s target of 60,000 charging points by 2030 and leverages solar storage technologies (e.g. lithium-ion batteries) to ensure efficient operation, contributing to sustainable mobility and decarbonisation under the Green Plan 2030."
   },
   {
-    "objectID": "Future works.html#estimated-costs-and-dimensions",
-    "href": "Future works.html#estimated-costs-and-dimensions",
-    "title": "Future works",
-    "section": "Estimated Costs and Dimensions",
-    "text": "Estimated Costs and Dimensions\n\n\n\n\n\n\n\nSpecification\nDetails\n\n\n\n\nTypical Panel Size\n1.7m x 1.0m (approx. 1.7m² per panel)\n\n\nPower Output per Panel\n~500 Wp (Watt-peak)\n\n\nAverage Cost per Panel\nSGD $300–$400 (before subsidies)\n\n\nInstallation & Inverter Cost\nSGD $1,500–$2,500 per system setup (variable)\n\n\nArea Needed for 1kWp Output\n~5–6 m²\n\n\nAverage Rooftop Size (MSCP)\n~1,000–1,500 m² (depending on location)\n\n\nPotential System Size\n150–250 kWp per car park",
-    "crumbs": [
-      "Results and Analysis",
-      "Future works"
-    ]
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "Overview",
+    "section": "",
+    "text": "Singapore’s energy grid, heavily reliant on natural gas, faces increasing pressure from rising electric vehicle (EV) adoption. With limited land, there is a need to identify optimal sites for solar-powered EV charging stations that integrate solar energy harvesting and storage to reduce dependence on the grid and support Green Plan 2030 goals.\n\n\n\nWe propose a GIS-based multi-criteria analysis to assess land suitability for solar-powered EV charging stations. By analysing factors like solar potential, land availability, and EV demand, we aim to identify ideal locations for these stations. This solution aims to support Singapore’s target of 60,000 charging points by 2030 and leverages solar storage technologies (e.g. lithium-ion batteries) to ensure efficient operation, contributing to sustainable mobility and decarbonisation under the Green Plan 2030."
+  },
+  {
+    "objectID": "index.html#project-schedule-and-workload",
+    "href": "index.html#project-schedule-and-workload",
+    "title": "Overview",
+    "section": "Project Schedule and Workload",
+    "text": "Project Schedule and Workload"
   },
   {
     "objectID": "Research.html",
@@ -172,26 +186,5 @@
       "Methodology",
       "Research"
     ]
-  },
-  {
-    "objectID": "Lessons.html",
-    "href": "Lessons.html",
-    "title": "Lessons",
-    "section": "",
-    "text": "Through this GIS-based exploration of solar potential for EV charging integration in Singapore, our team gained valuable insights across spatial analysis, energy systems, and urban planning realities:\n\nWe learnt how to leverage multi-criteria GIS techniques to overlay solar irradiance, terrain suitability, and infrastructure distribution for location-based decision-making.\nThe project highlighted the gap between theoretical suitability and real-world implementation, especially in space-scarce urban contexts.\nUnderstanding Singapore’s regulatory and infrastructural limitations shaped our appreciation for practical feasibility, not just technical potential.\nWe gained hands-on experience with tools like QGIS, raster calculators, zonal statistics, and spatial joins, which helped us apply classroom concepts to a real-world use case."
-  },
-  {
-    "objectID": "Lessons.html#lessons-learnt",
-    "href": "Lessons.html#lessons-learnt",
-    "title": "Lessons",
-    "section": "",
-    "text": "Through this GIS-based exploration of solar potential for EV charging integration in Singapore, our team gained valuable insights across spatial analysis, energy systems, and urban planning realities:\n\nWe learnt how to leverage multi-criteria GIS techniques to overlay solar irradiance, terrain suitability, and infrastructure distribution for location-based decision-making.\nThe project highlighted the gap between theoretical suitability and real-world implementation, especially in space-scarce urban contexts.\nUnderstanding Singapore’s regulatory and infrastructural limitations shaped our appreciation for practical feasibility, not just technical potential.\nWe gained hands-on experience with tools like QGIS, raster calculators, zonal statistics, and spatial joins, which helped us apply classroom concepts to a real-world use case."
-  },
-  {
-    "objectID": "Lessons.html#limitations-real-world-challenges",
-    "href": "Lessons.html#limitations-real-world-challenges",
-    "title": "Lessons",
-    "section": "Limitations & Real-World Challenges",
-    "text": "Limitations & Real-World Challenges\nDespite the value of spatial analysis, several real-world constraints must be acknowledged:\n\nTechnical & Transparency Barriers\n\nLack of Transparency: EV station operators rarely disclose whether sites are grid-tied or off-grid.\n\n\n\nDynamic Landscape: With over 1,129 new charging points added in the last six months (as of Jan 2025), data becomes outdated quickly, especially for experimental or private off-grid setups\n\n\n\nUrban Infrastructure Constraints\n\nSpace Scarcity: Rooftop or open-air installations are limited by Singapore’s land constraints and competing usage priorities (e.g., parking).\n\n\n\nHigh Upfront Costs: A 50 kWp solar canopy system can cost $100,000–$200,000 SGD, factoring in structure, labor, and urban integration.\n\n\n\nEnergy Mismatch: Solar output peaks in the daytime, while EV charging may occur at night—requiring grid backup or battery storage (~$25,000–$50,000 SGD per 50 kWh).\n\n\n\nRegulatory & Structural Considerations\n\nApproval Complexity: Deployments require regulatory compliance across LTA, EMA, and HDB, including standards like TR25 and grid interconnection.\nStructural Load & Weather: Solar infrastructure must be engineered to withstand heavy rainfall and wind, increasing design and material costs."
   }
 ]
